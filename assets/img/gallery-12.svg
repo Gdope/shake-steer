@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="Event placeholder">
+  <defs>
+    <linearGradient id="s12bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3c1030"/>
+      <stop offset="0.55" stop-color="#150d1c"/>
+      <stop offset="1" stop-color="#7c3fa3" stop-opacity=".55"/>
+    </linearGradient>
+    <radialGradient id="s12glow" cx="30%" cy="24%" r="70%">
+      <stop offset="0" stop-color="#c9a35e" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#c9a35e" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#s12bg)"/>
+  <rect width="1200" height="900" fill="url(#s12glow)"/>
+  <circle cx="1155" cy="331" r="30" fill="#7c3fa3" opacity="0.19"/><circle cx="1183" cy="37" r="8" fill="#c9a35e" opacity="0.15"/><circle cx="907" cy="103" r="24" fill="#c9a35e" opacity="0.11"/><circle cx="823" cy="622" r="28" fill="#7c3fa3" opacity="0.07"/><circle cx="179" cy="429" r="36" fill="#c9a35e" opacity="0.19"/><circle cx="271" cy="515" r="28" fill="#c9a35e" opacity="0.15"/><circle cx="203" cy="5" r="36" fill="#7c3fa3" opacity="0.11"/><circle cx="551" cy="624" r="30" fill="#c9a35e" opacity="0.07"/><circle cx="355" cy="161" r="22" fill="#c9a35e" opacity="0.19"/><circle cx="335" cy="599" r="16" fill="#7c3fa3" opacity="0.15"/><circle cx="859" cy="414" r="6" fill="#c9a35e" opacity="0.11"/><circle cx="711" cy="224" r="22" fill="#c9a35e" opacity="0.07"/><circle cx="227" cy="299" r="14" fill="#7c3fa3" opacity="0.19"/><circle cx="303" cy="616" r="6" fill="#c9a35e" opacity="0.15"/><circle cx="699" cy="31" r="26" fill="#c9a35e" opacity="0.11"/><circle cx="231" cy="587" r="14" fill="#7c3fa3" opacity="0.07"/><circle cx="931" cy="584" r="18" fill="#c9a35e" opacity="0.19"/><circle cx="767" cy="616" r="38" fill="#c9a35e" opacity="0.15"/><circle cx="11" cy="541" r="14" fill="#7c3fa3" opacity="0.11"/><circle cx="1127" cy="247" r="18" fill="#c9a35e" opacity="0.07"/><circle cx="1139" cy="552" r="22" fill="#c9a35e" opacity="0.19"/><circle cx="127" cy="385" r="24" fill="#7c3fa3" opacity="0.15"/><circle cx="587" cy="0" r="18" fill="#c9a35e" opacity="0.11"/><circle cx="551" cy="195" r="18" fill="#c9a35e" opacity="0.07"/><circle cx="1107" cy="538" r="22" fill="#7c3fa3" opacity="0.19"/><circle cx="191" cy="463" r="36" fill="#c9a35e" opacity="0.15"/>
+  <rect x="0" y="630" width="1200" height="270" fill="#150d1c" opacity=".82"/><g fill="none" stroke="#c9a35e" stroke-width="4" opacity=".6"><path d="M530,330 L670,330 L670,380 L658,420 L658,610 L542,610 L542,420 L530,380 Z"/><path d="M530,380 L670,380"/></g>
+  <rect width="1200" height="900" fill="none" stroke="#c9a35e" stroke-width="2" opacity=".18"/>
+  <text x="600" y="866" text-anchor="middle" font-family="Georgia, serif" font-size="20"
+        letter-spacing="6" fill="#f0e2c4" opacity=".5">PLACEHOLDER PHOTO</text>
+</svg>

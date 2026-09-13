@@ -1,0 +1,70 @@
+# ---------------------------------------------------------------------------
+# Shake&Steer — files Git should ignore
+#
+# Everything the website actually needs IS committed: the .html pages, the
+# folders assets/, i18n/ and downloads/ (including the two PDF menus), plus
+# .nojekyll. Only local clutter is listed below.
+# ---------------------------------------------------------------------------
+
+# --- Python leftovers from the scripts in tools/ ---------------------------
+# Created automatically the first time you run make-pdf.py or make-images.py.
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# --- Operating system clutter ----------------------------------------------
+# Windows Explorer and macOS Finder drop these into folders by themselves.
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.DS_Store?
+.AppleDouble
+.LSOverride
+._*
+
+# --- Code editors -----------------------------------------------------------
+.vscode/
+.idea/
+*.sublime-workspace
+*.code-workspace
+*.swp
+*.swo
+*~
+
+# --- Claude Code -------------------------------------------------------------
+# Your own machine's settings. The shared .claude/settings.json, if you ever
+# create one, stays in the repository.
+.claude/settings.local.json
+
+# --- Working files you don't want on a public website ------------------------
+# Anything saved next to a real file as a backup or a draft.
+*.bak
+*.tmp
+*.orig
+*.log
+*-backup.*
+*-copy.*
+*.psd
+*.ai
+*.sketch
+/scratch/
+/private/
+
+# --- Font files ---------------------------------------------------------------
+# make-pdf.py will use a .ttf placed in tools/fonts/ if your system fonts are
+# missing. Most commercial fonts (including the Windows ones this project uses
+# by default) may not be redistributed, so they are kept out of the repository.
+# If you have a font you ARE licensed to share, delete these two lines.
+tools/fonts/
+*.ttf
+
+# --- Never ignored, listed here as a reminder ---------------------------------
+# Un-ignore the PDF menus: they are part of the website, and some global Git
+# configs exclude PDFs by habit.
+!downloads/*.pdf

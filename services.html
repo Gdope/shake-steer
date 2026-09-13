@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title data-i18n="meta.services.title">Services &amp; Packages — Shake&amp;Steer</title>
+  <meta name="description"
+        content="Cocktail catering for weddings, private parties, corporate events, birthdays and family celebrations. Three packages, every quote written for the event."
+        data-i18n-attr="content:meta.services.description">
+
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap">
+
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+
+  <script src="assets/js/theme.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
+
+  <!-- ================= HEADER (same on every page) ================= -->
+  <header class="site-header">
+    <div class="site-header__inner">
+
+      <a class="brand" href="index.html">
+        <img class="brand__mark" src="assets/img/logo.svg" alt="" width="34" height="34">
+        <span>Shake<span class="brand__amp">&amp;</span>Steer</span>
+      </a>
+
+      <nav class="nav" id="primary-nav" data-nav aria-label="Main">
+        <a class="nav__link" href="index.html" data-i18n="nav.home">Home</a>
+        <a class="nav__link" href="about.html" data-i18n="nav.about">About</a>
+        <a class="nav__link" href="menu.html" data-i18n="nav.menu">Menu</a>
+        <a class="nav__link" href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+        <a class="nav__link" href="services.html" aria-current="page" data-i18n="nav.services">Services</a>
+        <a class="nav__link" href="contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="header-tools">
+        <div class="lang-switch">
+          <svg class="lang-switch__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.6" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/><path d="M3 12h18"/>
+            <ellipse cx="12" cy="12" rx="4.2" ry="9"/>
+          </svg>
+          <label class="sr-only" for="lang-select" data-i18n="nav.language">Language</label>
+          <select id="lang-select" data-lang-switch></select>
+        </div>
+
+        <button class="theme-toggle" type="button" data-theme-toggle
+                aria-label="Switch theme" data-i18n-attr="aria-label:nav.theme">
+          <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+          </svg>
+          <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.6" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/>
+          </svg>
+        </button>
+      </div>
+
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false"
+              aria-controls="primary-nav" aria-label="Menu" data-i18n-attr="aria-label:nav.menuButton">
+        <span class="nav-toggle__bars"><span></span><span></span><span></span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= PAGE HERO ================= -->
+    <section class="hero hero--page">
+      <div class="hero__bg"></div>
+      <div class="hero__grain"></div>
+      <div class="hero__frame"></div>
+
+      <div class="container hero__inner">
+        <p class="eyebrow eyebrow--center" data-i18n="services.hero.eyebrow">Services &amp; packages</p>
+        <h1 data-i18n="services.hero.title">A bar built around<br>the evening you are planning</h1>
+        <p class="hero__text" data-i18n="services.hero.text">
+          Five kinds of event, three packages and a quote written for your date, your venue
+          and your guest list. No fixed price list, because no two evenings are the same.
+        </p>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         EVENT TYPES
+         ================================================================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow eyebrow--center" data-i18n="services.types.eyebrow">What we cater</p>
+          <h2 data-i18n="services.types.title">Five kinds of evening</h2>
+          <p data-i18n="services.types.text">
+            Each one has its own rhythm. The list under every card is what a typical
+            booking of that type includes.
+          </p>
+        </div>
+
+        <div class="grid grid--2" data-reveal-group="90">
+
+          <!-- WEDDINGS -->
+          <article class="card reveal">
+            <span class="icon-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="9" cy="15" r="5.5"/><circle cx="15" cy="15" r="5.5"/>
+                <path d="M10.4 4.5h3.2l1.1 2.2-2.7 2.1-2.7-2.1z"/>
+              </svg>
+            </span>
+            <h3 data-i18n="services.weddings.title">Weddings</h3>
+            <p data-i18n="services.weddings.long">
+              From the welcome pour as guests arrive to the last round after the band packs
+              up. We coordinate directly with your planner, caterer and venue so the bar
+              never becomes one more thing for you to manage.
+            </p>
+            <ul class="includes">
+              <li data-i18n="services.weddings.i1">A signature cocktail created for the couple</li>
+              <li data-i18n="services.weddings.i2">Welcome drinks and champagne service for toasts</li>
+              <li data-i18n="services.weddings.i3">Printed menus matched to your stationery</li>
+              <li data-i18n="services.weddings.i4">Site visit and timeline planning with your venue</li>
+            </ul>
+          </article>
+
+          <!-- PRIVATE PARTIES -->
+          <article class="card reveal">
+            <span class="icon-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round">
+                <path d="M3 4h10l-5 6z"/><path d="M8 10v8"/><path d="M5 18h6"/>
+                <path d="M19 3.2l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/>
+                <path d="M17 13.5l.5 1.3 1.3.5-1.3.5-.5 1.3-.5-1.3-1.3-.5 1.3-.5z"/>
+              </svg>
+            </span>
+            <h3 data-i18n="services.private.title">Private parties</h3>
+            <p data-i18n="services.private.long">
+              House parties, rooftops, villas and garden evenings. A compact bar that fits
+              through a normal doorway, a menu of four or five drinks, and a team that
+              knows when to pour quickly and when to slow down.
+            </p>
+            <ul class="includes">
+              <li data-i18n="services.private.i1">Compact modular bar for tight spaces</li>
+              <li data-i18n="services.private.i2">Menu tailored to the host's taste</li>
+              <li data-i18n="services.private.i3">Glassware, ice and garnishes included</li>
+              <li data-i18n="services.private.i4">Full clean-down before we leave</li>
+            </ul>
+          </article>
+
+          <!-- CORPORATE -->
+          <article class="card reveal">
+            <span class="icon-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round">
+                <path d="M4 21V6.2L11 3v18"/><path d="M11 10h9v11"/>
+                <path d="M7 9h1M7 13h1M7 17h1M15 14h1M15 18h1"/>
+              </svg>
+            </span>
+            <h3 data-i18n="services.corporate.title">Corporate events</h3>
+            <p data-i18n="services.corporate.long">
+              Launches, conferences, staff parties and client evenings. We plan for peak
+              demand — the fifteen minutes after a keynote ends — so nobody spends the
+              networking hour in a queue.
+            </p>
+            <ul class="includes">
+              <li data-i18n="services.corporate.i1">Branded serves, garnishes and menu cards</li>
+              <li data-i18n="services.corporate.i2">Throughput planning for large arrivals</li>
+              <li data-i18n="services.corporate.i3">Alcohol-free menu of equal standard</li>
+              <li data-i18n="services.corporate.i4">Company invoice, insurance and licences in order</li>
+            </ul>
+          </article>
+
+          <!-- BIRTHDAYS -->
+          <article class="card reveal">
+            <span class="icon-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round">
+                <path d="M4 21h16"/><path d="M5 21v-6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v6"/>
+                <path d="M12 13V9.5"/>
+                <path d="M12 7c0-.9.9-1.3.9-2.2 0-.6-.4-1-.9-1.4-.5.4-.9.8-.9 1.4 0 .9.9 1.3.9 2.2z"/>
+                <path d="M5 17c1.8 0 1.8 1.4 3.5 1.4S10.2 17 12 17s1.8 1.4 3.5 1.4S17.2 17 19 17"/>
+              </svg>
+            </span>
+            <h3 data-i18n="services.birthdays.title">Birthdays</h3>
+            <p data-i18n="services.birthdays.long">
+              Milestone dinners, surprise parties and long nights in rented spaces. We build
+              the list around what the guest of honour actually drinks, and keep one
+              surprise back for the moment the cake arrives.
+            </p>
+            <ul class="includes">
+              <li data-i18n="services.birthdays.i1">Menu built around the guest of honour</li>
+              <li data-i18n="services.birthdays.i2">A birthday serve presented at the table</li>
+              <li data-i18n="services.birthdays.i3">Flexible hours if the night runs long</li>
+              <li data-i18n="services.birthdays.i4">Soft drinks and mocktails for every age</li>
+            </ul>
+          </article>
+
+          <!-- CELEBRATIONS -->
+          <article class="card reveal">
+            <span class="icon-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round">
+                <path d="M10 2.5h4v3.2l2 3.1V20a1.8 1.8 0 0 1-1.8 1.8H9.8A1.8 1.8 0 0 1 8 20V8.8l2-3.1z"/>
+                <path d="M8 13h8"/><path d="M19.5 3.5l.9 1M20.5 7.5h1.2M17.5 1.8v1.3"/>
+              </svg>
+            </span>
+            <h3 data-i18n="services.celebrations.title">Celebrations</h3>
+            <p data-i18n="services.celebrations.long">
+              Christenings, anniversaries, engagements, graduations and homecomings —
+              daytime events with mixed ages, where the alcohol-free half of the menu
+              matters just as much as the rest.
+            </p>
+            <ul class="includes">
+              <li data-i18n="services.celebrations.i1">Full alcohol-free menu, not an afterthought</li>
+              <li data-i18n="services.celebrations.i2">Daytime service and family-friendly pacing</li>
+              <li data-i18n="services.celebrations.i3">Quiet set-up around a ceremony or service</li>
+              <li data-i18n="services.celebrations.i4">Smaller bar footprint for family homes</li>
+            </ul>
+          </article>
+
+          <!-- SOMETHING ELSE -->
+          <article class="card reveal">
+            <span class="icon-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+                <path d="M12 5v14M5 12h14"/>
+              </svg>
+            </span>
+            <h3 data-i18n="services.other.title">Something else</h3>
+            <p data-i18n="services.other.long">
+              Gallery openings, film wraps, product launches, private tastings, cocktail
+              masterclasses for a team. If there are people and a reason to raise a glass,
+              we can build a bar for it.
+            </p>
+            <ul class="includes">
+              <li data-i18n="services.other.i1">Guided tastings and masterclasses</li>
+              <li data-i18n="services.other.i2">Bar takeovers and pop-ups</li>
+              <li data-i18n="services.other.i3">Bottled cocktails for gifting</li>
+              <li data-i18n="services.other.i4">Multi-day festivals and residencies</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         PACKAGES — deliberately NO prices.
+         ================================================================= -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow eyebrow--center" data-i18n="services.packages.eyebrow">Packages</p>
+          <h2 data-i18n="services.packages.title">Three starting points</h2>
+          <p data-i18n="services.packages.text">
+            Think of these as a shape rather than a fixed offer. Every quote is written for
+            your guest count, venue and hours — tell us what you need and we will adapt.
+          </p>
+        </div>
+
+        <div class="packages" data-reveal-group="110">
+
+          <!-- ESSENTIAL -->
+          <article class="package reveal">
+            <h3 class="package__name" data-i18n="services.packages.p1.name">Essential</h3>
+            <p class="package__tagline" data-i18n="services.packages.p1.tagline">
+              Intimate gatherings, up to about 50 guests
+            </p>
+            <p class="package__price" data-i18n="services.packages.price">Price on request</p>
+            <p class="package__note" data-i18n="services.packages.note">Quoted per event</p>
+            <ul class="includes">
+              <li data-i18n="services.packages.p1.i1">Modular bar, set up and taken down by us</li>
+              <li data-i18n="services.packages.p1.i2">Menu of four cocktails, one alcohol-free</li>
+              <li data-i18n="services.packages.p1.i3">Two professional bartenders</li>
+              <li data-i18n="services.packages.p1.i4">Glassware, ice and garnishes</li>
+              <li data-i18n="services.packages.p1.i5">Four hours of service</li>
+            </ul>
+            <a class="btn" href="contact.html" data-i18n="services.packages.cta">Request a quote</a>
+          </article>
+
+          <!-- PREMIUM -->
+          <article class="package package--featured reveal">
+            <span class="package__badge" data-i18n="services.packages.p2.badge">Most chosen</span>
+            <h3 class="package__name" data-i18n="services.packages.p2.name">Premium</h3>
+            <p class="package__tagline" data-i18n="services.packages.p2.tagline">
+              Weddings and parties of roughly 50–150 guests
+            </p>
+            <p class="package__price" data-i18n="services.packages.price">Price on request</p>
+            <p class="package__note" data-i18n="services.packages.note">Quoted per event</p>
+            <ul class="includes">
+              <li data-i18n="services.packages.p2.i1">Everything in Essential</li>
+              <li data-i18n="services.packages.p2.i2">Menu of six cocktails, two alcohol-free</li>
+              <li data-i18n="services.packages.p2.i3">One signature drink designed for you</li>
+              <li data-i18n="services.packages.p2.i4">Three bartenders plus a barback</li>
+              <li data-i18n="services.packages.p2.i5">Hand-cut clear ice and printed menus</li>
+              <li data-i18n="services.packages.p2.i6">Six hours of service, welcome pour included</li>
+            </ul>
+            <a class="btn btn--primary" href="contact.html" data-i18n="services.packages.cta">Request a quote</a>
+          </article>
+
+          <!-- SIGNATURE -->
+          <article class="package reveal">
+            <h3 class="package__name" data-i18n="services.packages.p3.name">Signature</h3>
+            <p class="package__tagline" data-i18n="services.packages.p3.tagline">
+              Large celebrations and multi-bar events
+            </p>
+            <p class="package__price" data-i18n="services.packages.price">Price on request</p>
+            <p class="package__note" data-i18n="services.packages.note">Quoted per event</p>
+            <ul class="includes">
+              <li data-i18n="services.packages.p3.i1">Everything in Premium</li>
+              <li data-i18n="services.packages.p3.i2">Two or more bars across the venue</li>
+              <li data-i18n="services.packages.p3.i3">Bespoke menu with three house creations</li>
+              <li data-i18n="services.packages.p3.i4">Champagne and wine service alongside the bar</li>
+              <li data-i18n="services.packages.p3.i5">Bar front dressed to your styling</li>
+              <li data-i18n="services.packages.p3.i6">Open hours, plus a late-night service</li>
+            </ul>
+            <a class="btn" href="contact.html" data-i18n="services.packages.cta">Request a quote</a>
+          </article>
+
+        </div>
+
+        <p class="text-center" style="margin-top:2.5rem;color:var(--text-muted);font-size:.92rem"
+           data-i18n="services.packages.footnote">
+          Travel outside our standard service area, extra hours, additional bars and
+          special licences are quoted separately and always agreed in advance.
+        </p>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         ADD-ONS
+         ================================================================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="services.addons.eyebrow">Add to any package</p>
+          <h2 data-i18n="services.addons.title">Extras worth considering</h2>
+        </div>
+
+        <div class="grid grid--4" data-reveal-group="80">
+          <article class="card reveal">
+            <span class="card__num">01</span>
+            <h3 data-i18n="services.addons.a1.title">Welcome tray service</h3>
+            <p data-i18n="services.addons.a1.text">
+              Drinks carried to guests on trays as they arrive, so nobody has to find the
+              bar before they have found their seat.
+            </p>
+          </article>
+          <article class="card reveal">
+            <span class="card__num">02</span>
+            <h3 data-i18n="services.addons.a2.title">Cocktail masterclass</h3>
+            <p data-i18n="services.addons.a2.text">
+              A 45-minute guided session for up to twenty guests — three drinks made,
+              tasted and taken apart.
+            </p>
+          </article>
+          <article class="card reveal">
+            <span class="card__num">03</span>
+            <h3 data-i18n="services.addons.a3.title">Bottled gifts</h3>
+            <p data-i18n="services.addons.a3.text">
+              Your signature cocktail bottled, labelled and sealed as a favour for guests
+              to take home.
+            </p>
+          </article>
+          <article class="card reveal">
+            <span class="card__num">04</span>
+            <h3 data-i18n="services.addons.a4.title">Late-night service</h3>
+            <p data-i18n="services.addons.a4.text">
+              A short, strong list for the last two hours: espresso serves, digestifs and
+              one very cold beer.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         FAQ
+         ================================================================= -->
+    <section class="section section--alt">
+      <div class="container container--narrow">
+        <div class="section-head section-head--center">
+          <p class="eyebrow eyebrow--center" data-i18n="services.faq.eyebrow">Good to know</p>
+          <h2 data-i18n="services.faq.title">Questions we are asked most</h2>
+        </div>
+
+        <div class="faq reveal">
+          <details>
+            <summary data-i18n="services.faq.q1">How far in advance should we book?</summary>
+            <p data-i18n="services.faq.a1">
+              For weddings in high season, six to twelve months is comfortable. Smaller
+              parties are often possible with a few weeks' notice — always ask, because
+              cancellations happen.
+            </p>
+          </details>
+          <details>
+            <summary data-i18n="services.faq.q2">Do you supply the alcohol?</summary>
+            <p data-i18n="services.faq.a2">
+              Usually yes, and it is included in the quote. If your venue requires you to
+              supply the drink yourself, we are happy to work as a dry-hire bar instead.
+            </p>
+          </details>
+          <details>
+            <summary data-i18n="services.faq.q3">What do you need from the venue?</summary>
+            <p data-i18n="services.faq.a3">
+              A level space of roughly three by two metres, one standard power socket and
+              access for loading. No running water needed — we bring our own.
+            </p>
+          </details>
+          <details>
+            <summary data-i18n="services.faq.q4">How many guests can you serve?</summary>
+            <p data-i18n="services.faq.a4">
+              We plan one bartender for every fifty guests. Above three hundred we normally
+              suggest a second bar rather than a longer queue.
+            </p>
+          </details>
+          <details>
+            <summary data-i18n="services.faq.q5">Do you travel?</summary>
+            <p data-i18n="services.faq.a5">
+              Yes. Travel within our standard service area is included; anything further is
+              quoted openly, including accommodation where an early set-up requires it.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="section cta">
+      <div class="container">
+        <h2 data-i18n="cta.title">Tell us about your evening</h2>
+        <p data-i18n="cta.text">
+          Dates go quickly in high season. Send us the details and we will come back with a
+          proposal and a quote — usually within two working days.
+        </p>
+        <div class="cta__actions">
+          <a class="btn btn--primary btn--lg" href="contact.html" data-i18n="cta.primary">Get in touch</a>
+          <a class="btn btn--lg" href="menu.html" data-i18n="menu.cta.link">See the menu</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER (same on every page) ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+
+        <div>
+          <span class="footer-brand__name">Shake<span class="brand__amp">&amp;</span>Steer</span>
+          <p data-i18n="footer.about">
+            A travelling cocktail bar for weddings, private parties and corporate events.
+            Bespoke menus, professional bartenders, and a bar built for the room it stands in.
+          </p>
+        </div>
+
+        <div>
+          <h4 data-i18n="footer.explore">Explore</h4>
+          <ul class="footer-list">
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="menu.html" data-i18n="nav.menu">Menu</a></li>
+            <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 data-i18n="footer.services">Services</h4>
+          <ul class="footer-list">
+            <li><a href="services.html" data-i18n="services.weddings.title">Weddings</a></li>
+            <li><a href="services.html" data-i18n="services.private.title">Private parties</a></li>
+            <li><a href="services.html" data-i18n="services.corporate.title">Corporate events</a></li>
+            <li><a href="services.html" data-i18n="services.celebrations.title">Celebrations</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 data-i18n="footer.contact">Contact</h4>
+          <!-- PLACEHOLDERS — replace the e-mail and phone in every .html file -->
+          <ul class="footer-list">
+            <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+            <li><a href="tel:+000000000000">+00 000 000 000</a></li>
+          </ul>
+          <div class="socials" style="margin-top:1.2rem">
+            <a class="social" href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/>
+                <circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/>
+              </svg>
+            </a>
+            <a class="social" href="https://tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M16.6 5.8a4.3 4.3 0 0 1-1.1-2.8h-3v12.1a2.4 2.4 0 1 1-1.7-2.3V9.7a5.5 5.5 0 1 0 4.7 5.4V9.6a7.2 7.2 0 0 0 4.2 1.35V7.9a4.3 4.3 0 0 1-3.1-2.1z"/>
+              </svg>
+            </a>
+            <a class="social" href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5h1.65V3.6c-.3-.04-1.3-.1-2.5-.1-2.5 0-4.2 1.53-4.2 4.33V9.9H7.3V13H10v8z"/>
+              </svg>
+            </a>
+            <a class="social" href="https://wa.me/000000000000" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3zm0 2a7 7 0 1 1-3.6 13l-.3-.2-2.3.6.6-2.2-.2-.3A7 7 0 0 1 12 5zm-2.6 3.4c-.2 0-.5 0-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.7 2.7 4.2 3.7 2 .8 2.4.6 2.9.6.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.15-1.2l-.6-.3-1.5-.7c-.2-.1-.4-.1-.55.1l-.75 1c-.15.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.35.1-.45l.45-.5c.15-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.7-1.7c-.2-.45-.4-.4-.55-.4z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="site-footer__bottom">
+        <p>© <span data-year>2026</span> Shake&amp;Steer. <span data-i18n="footer.rights">All rights reserved.</span></p>
+        <p data-i18n="footer.responsibly">Please enjoy responsibly. 18+</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

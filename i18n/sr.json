@@ -1,0 +1,493 @@
+{
+  "meta": {
+    "home": {
+      "title": "Shake&Steer — vrhunski koktel ketering",
+      "description": "Shake&Steer je mobilni koktel bar za venčanja, privatne proslave i korporativne događaje. Menija po meri, profesionalni bartenderi i bar koji izgleda jednako dobro kao što toči."
+    },
+    "about": {
+      "title": "O nama — Shake&Steer koktel ketering",
+      "description": "Priča iza Shake&Steer-a: mobilni koktel bar zasnovan na dobrim sastojcima, nenametljivoj usluzi i menijima pisanim za jedno jedino veče."
+    },
+    "menu": {
+      "title": "Meni — Shake&Steer koktel ketering",
+      "description": "Deset autorskih Shake&Steer koktela i PDF za preuzimanje sa kompletnom listom od oko sedamdeset pića, opisima i sastojcima."
+    },
+    "gallery": {
+      "title": "Galerija — Shake&Steer koktel ketering",
+      "description": "Fotografije sa Shake&Steer barova na venčanjima, privatnim proslavama, korporativnim večerima i porodičnim slavljima."
+    },
+    "services": {
+      "title": "Usluge i paketi — Shake&Steer",
+      "description": "Koktel ketering za venčanja, privatne proslave, korporativne događaje, rođendane i porodična slavlja. Tri paketa, a svaka ponuda pisana za konkretan događaj."
+    },
+    "contact": {
+      "title": "Kontakt — Shake&Steer koktel ketering",
+      "description": "Javite nam se povodom venčanja, proslave, korporativnog događaja ili slavlja. Imejl, telefon, područje rada i društvene mreže."
+    }
+  },
+
+  "nav": {
+    "home": "Početna",
+    "about": "O nama",
+    "menu": "Meni",
+    "gallery": "Galerija",
+    "services": "Usluge",
+    "contact": "Kontakt",
+    "language": "Jezik",
+    "theme": "Promeni temu",
+    "menuButton": "Meni",
+    "skip": "Pređi na sadržaj"
+  },
+
+  "home": {
+    "hero": {
+      "eyebrow": "Mobilni koktel bar i ketering za događaje",
+      "tagline": "Vrhunski kokteli, tačno tamo gde slavite.",
+      "text": "Putujući koktel bar za venčanja, privatne proslave i korporativne večeri. Meni po meri, iskusni bartenderi i bar koji izgleda jednako dobro kao što toči.",
+      "ctaMenu": "Pogledajte meni",
+      "ctaBook": "Isplanirajte događaj",
+      "scroll": "Skrolujte"
+    },
+    "intro": {
+      "eyebrow": "Ko smo mi",
+      "title": "Bar koji dolazi kod vas i veče koje ljudi pamte",
+      "text1": "Shake&Steer gradi kompletan koktel bar u vašem prostoru — šank, čaše, led, dekoraciju i ljude iza pulta. Sve se priprema u našoj radionici i sklapa na licu mesta, nekoliko sati pre nego što stigne prvi gost.",
+      "text2": "Radimo sa kratkom, sezonskom listom autorskih koktela i sa debelom knjigom klasika, pa svaki meni koji napišemo pripada baš tom jednom veču i nikom drugom.",
+      "link": "Pročitajte našu priču",
+      "plate": "Naš mobilni bar",
+      "imageAlt": "Placeholder fotografija Shake&Steer bara"
+    },
+    "stats": {
+      "events": "Održanih događaja",
+      "cocktails": "Koktela na listi",
+      "guests": "Gostiju za šankom",
+      "years": "Godina iskustva"
+    },
+    "events": {
+      "eyebrow": "Šta radimo",
+      "title": "Povodi za koje točimo",
+      "text": "Pet vrsta večeri, jedan standard. Svaki format može da se prilagodi — od dvadeset gostiju u dnevnoj sobi do pet stotina pod šatorom.",
+      "moreTitle": "Imate nešto drugo na umu?",
+      "moreText": "Predstavljanja proizvoda, završeci snimanja, otvaranja galerija, privatne degustacije. Ako postoje ljudi i povod, možemo da napravimo bar.",
+      "moreLink": "Sve usluge"
+    },
+    "signature": {
+      "eyebrow": "Sa liste",
+      "title": "Četiri naša potpisa",
+      "text": "Deset autorskih koktela stoji uz oko sedamdeset klasika. Evo četiri koja obično prva nestanu.",
+      "link": "Pogledajte ceo meni"
+    },
+    "process": {
+      "eyebrow": "Kako funkcioniše",
+      "title": "Četiri koraka od prve poruke do poslednjeg koktela",
+      "s1": {
+        "title": "Razgovor",
+        "text": "Recite nam datum, mesto i otprilike koliko ljudi očekujete. Odgovaramo sa slobodnim terminima i nekoliko iskrenih pitanja."
+      },
+      "s2": {
+        "title": "Osmišljavanje menija",
+        "text": "Predlažemo meni napravljen prema vašem ukusu i prostoru, uključujući bezalkoholna pića zbog kojih se niko ne oseća uskraćeno."
+      },
+      "s3": {
+        "title": "Postavljamo bar",
+        "text": "Šank, led, čaše, dekoracija i ekipa stižu ranije, tiho se postavljaju i prostor ostaje tačno onakav kakav smo ga zatekli."
+      },
+      "s4": {
+        "title": "Vi slavite",
+        "text": "Vi provodite veče sa gostima. Mi vodimo računa o svemu sa druge strane šanka."
+      }
+    },
+    "quote": {
+      "text": "Od ćoška starog kamenog dvorišta napravili su najbolji bar u gradu, za jedno veče. Pola gostiju i dalje traži recept.",
+      "role": "— venčanje, septembar"
+    }
+  },
+
+  "about": {
+    "hero": {
+      "eyebrow": "Naša priča",
+      "title": "Devet godina pravljenja barova u tuđim prostorima",
+      "text": "Shake&Steer je počeo sa jednim transportnim koferom, dva bartendera i tvrdoglavom idejom: da koktel serviran na privatnoj proslavi mora da bude jednako dobar kao onaj iz vrhunskog bara."
+    },
+    "story": {
+      "eyebrow": "Kako je počelo",
+      "title": "Jedan kofer, jedno venčanje, bez rezervnog plana",
+      "text1": "Prvi događaj bilo je venčanje prijatelja u dvorištu bez tekuće vode i sa jednom jedinom utičnicom. Napravili smo šank od pozajmljenih gajbi, izneli led uz dva sprata stepenica i servirali dvesta četrdeset koktela.",
+      "text2": "Ništa te noći nije bilo lako i sve je vredelo ponoviti. Od tada se broj kofera umnožio, šank je postao modularni pult koji smo sami dizajnirali, a ekipa je porasla — ali način rada se nije promenio. Dolazimo ranije, sve pripremamo ručno i nečije jedno važno veče tretiramo upravo tako.",
+      "text3": "Danas točimo na venčanjima u vinogradima, rođendanima u stanovima, predstavljanjima u galerijama i krštenjima u porodičnim kućama. Razmera se menja. Standard ne.",
+      "plate": "Prva sezona",
+      "imageAlt": "Placeholder fotografija sa jednog od prvih Shake&Steer događaja"
+    },
+    "values": {
+      "eyebrow": "Po čemu se razlikujemo",
+      "title": "Četiri stvari oko kojih ne pravimo kompromis",
+      "v1": {
+        "title": "Sve pravimo od nule",
+        "text": "Sirupe, kordijale, šrabove i infuzije proizvodimo u sopstvenoj radionici u malim serijama, sa datumom i obaveznom degustacijom pre nego što krenu na put. Flaširani sour miks nikada nije bio u našem kombiju."
+      },
+      "v2": {
+        "title": "Led je sastojak, a ne dodatak",
+        "text": "Sami sečemo bistre blokove: velike kocke za koktele sa naglaskom na destilat, drobljeni led za julepe i duge štapiće za highball. Hladno i sporo otapanje je pola razloga zašto piće ima isti ukus i na dnu čaše."
+      },
+      "v3": {
+        "title": "Bar dizajniran za prostor",
+        "text": "Naši pultovi su modularni, a prednja strana se oblači prema prostoru — hrast, brušeni mesing, mermer ili nabrani lan. Bar treba da izgleda kao da je oduvek tu."
+      },
+      "v4": {
+        "title": "Usluga koju primetite tek kada vam treba",
+        "text": "Naši bartenderi umeju da pročitaju prostoriju: brzi i tihi tokom zdravica, srdačni i izdašni na podijumu, i nikada najglasnija stvar na fotografijama."
+      }
+    },
+    "craft": {
+      "eyebrow": "Doživljaj",
+      "title": "Šta vaši gosti zaista osete",
+      "text1": "Gost priđe šanku i zatekne kratak, čitljiv meni — četiri ili pet pića izabranih baš za to veče, odštampanih na dobrom papiru, sa bezalkoholnom opcijom koja stoji ravnopravno, a ne kao izvinjenje.",
+      "text2": "Pozdravimo ga po imenu ako ga znamo, uslužimo za manje od devedeset sekundi i damo mu čašu koja je kako treba hladna, kako treba izbalansirana i dovoljno lepa za fotografiju. Zatim se vraća na proslavu, što je i cela poenta.",
+      "link": "Pogledajte meni",
+      "plate": "Iza šanka",
+      "imageAlt": "Placeholder fotografija koktela u završnoj fazi pripreme"
+    },
+    "team": {
+      "eyebrow": "Ljudi",
+      "title": "Malo jezgro i ekipa kojoj verujemo",
+      "text1": "Svaki događaj vodi jedan od naših iskusnih bartendera, koji je na licu mesta od prve gajbe do poslednje kutije. Oko njega gradimo ekipu prema broju gostiju — po pravilu jedan bartender na pedeset gostiju, uz pomoćnika i runnera za veće večeri.",
+      "text2": "Svako ko radi za Shake&Steer šankom proveo je vreme i u pravom baru. Dolaze u uniformi, nose svoj alat i znaju da se razlika između dobre i odlične večeri obično meri sitnim pažnjama.",
+      "plate": "Ekipa",
+      "imageAlt": "Placeholder fotografija Shake&Steer ekipe"
+    },
+    "quote": {
+      "text": "Planirali smo žurku, a oni su isporučili veče. Tri meseca kasnije ljudi i dalje pričaju o pićima, a ne o rasporedu sedenja.",
+      "role": "— proslava godišnjice"
+    }
+  },
+
+  "menu": {
+    "hero": {
+      "eyebrow": "Pića",
+      "title": "Deset potpisa, sedamdeset načina da kažete da",
+      "text": "Ovih deset su autorski kokteli po kojima nas pamte. Iza njih stoji cela knjiga klasika, špriceva, tiki koktela i bezalkoholnih pića — sve je u PDF-u na dnu ove stranice."
+    },
+    "signature": {
+      "eyebrow": "Autorski kokteli",
+      "title": "Lista kuće",
+      "text": "Pišemo je iznova dvaput godišnje, prema onome što je u sezoni. Svaki od njih može da se pripremi u većim količinama bez gubitka kvaliteta."
+    },
+    "tags": {
+      "whisky": "Viski",
+      "gin": "Džin",
+      "vodka": "Votka",
+      "rum": "Rum",
+      "tequila": "Tekila",
+      "mezcal": "Meskal",
+      "champagne": "Šampanjac",
+      "zeroproof": "Bezalkoholno"
+    },
+    "c1": {
+      "desc": "Odležali viski omekšan smokvom i vanilom, sa dahom dima trešnjinog drveta koji se oslobađa za stolom.",
+      "alt": "Placeholder fotografija koktela Velvet Sovereign"
+    },
+    "c2": {
+      "desc": "Džin mešan sa likerom od šljive i zlatnom kamilicom, blistav kao popodnevno sunce i dvostruko lakši za piti.",
+      "alt": "Placeholder fotografija koktela Gilded Plum"
+    },
+    "c3": {
+      "desc": "Dimljeni meskal, ruža i rozi grejpfrut preko dugog bloka bistrog leda — cvetno na početku, tiho zadimljeno na kraju.",
+      "alt": "Placeholder fotografija koktela Rosé Noir"
+    },
+    "c4": {
+      "desc": "Primorski džin, tonik sa morskom soli i kordijal od zelene masline i ruzmarina. Čisto, slankasto i nemoguće za piti polako u avgustu.",
+      "alt": "Placeholder fotografija koktela Adriatic Mist"
+    },
+    "c5": {
+      "desc": "Crna ribizla i pečena pomorandža ispod polako dolivanog šampanjca, u rashlađenoj flauti sa jednim listićem zlata.",
+      "alt": "Placeholder fotografija koktela Bordeaux Ember"
+    },
+    "c6": {
+      "desc": "Votka sa ljubičicom i kupinom, produžena penušavim vinom i servirana u boji neba deset minuta posle zalaska sunca.",
+      "alt": "Placeholder fotografija koktela The Violet Hour"
+    },
+    "c7": {
+      "desc": "Krastavac, zelena jabuka i ljupčac sa kordijalom od veržisa i sodom. Osmišljen jednako pažljivo kao i pića sa alkoholom.",
+      "alt": "Placeholder fotografija koktela Garden Room"
+    },
+    "c8": {
+      "desc": "Tamni rum, pečeni ananas i zvezdasti anis, nalivani u visoku čašu preko drobljenog leda, sa obodom od cimeta i šećera.",
+      "alt": "Placeholder fotografija koktela Amber & Anise"
+    },
+    "c9": {
+      "desc": "Blanko tekila sa plavim leptirastim grahom, limetom i kordijalom od slanog meda koji menja boju dok se led topi.",
+      "alt": "Placeholder fotografija koktela Midnight Harbour"
+    },
+    "c10": {
+      "desc": "Zova, bela breskva i šampanjac sa kockom šećera natopljenom bitersom — naše omiljeno piće dobrodošlice na venčanjima.",
+      "alt": "Placeholder fotografija koktela Fête Royale"
+    },
+    "full": {
+      "eyebrow": "Cela knjiga",
+      "title": "Oko sedamdeset pića, u sedam poglavlja",
+      "text": "Vaš konačni meni obično čini pet do osam pića izabranih iz ove knjige. Kompletna lista, sa opisima i sastojcima, nalazi se u PDF-u ispod."
+    },
+    "cat": {
+      "signature": "Autorski kokteli",
+      "classics": "Klasici, iznova",
+      "sparkling": "Penušavo i šampanjac",
+      "aperitivo": "Aperitivi i šprices",
+      "tropical": "Tropsko i tiki",
+      "zeroproof": "Bezalkoholno",
+      "digestif": "Posle večere"
+    },
+    "download": {
+      "eyebrow": "Kompletan meni",
+      "title": "Ponesite celu listu sa sobom",
+      "text": "Oko sedamdeset koktela sa opisom i punim sastojcima za svaki, prelomljeno tako da se uredno štampa na A4 formatu.",
+      "button": "Preuzmite ceo meni (PDF)",
+      "en": "PDF na engleskom",
+      "sr": "PDF na srpskom",
+      "hint": "Glavno dugme prati jezik izabran u zaglavlju: srpski za SR, engleski za sve ostalo."
+    },
+    "cta": {
+      "title": "Želite meni pisan za vaše veče?",
+      "text": "Pošaljite nam datum, prostor i kakvu noć zamišljate. Vraćamo se sa nacrtom menija koji već možete da zamislite u rukama vaših gostiju.",
+      "link": "Pogledajte meni"
+    }
+  },
+
+  "gallery": {
+    "hero": {
+      "eyebrow": "Galerija",
+      "title": "Večeri koje smo točili",
+      "text": "Barovi napravljeni u dvorištima, svečanim salama, vinogradima i dnevnim sobama. Kliknite na bilo koju fotografiju da je vidite uvećanu."
+    },
+    "note": "Sve fotografije na ovoj stranici su placeholderi. Zamenite fajlove u folderu /assets/img/ svojima i zadržite ista imena fajlova.",
+    "lightbox": {
+      "label": "Pregled fotografija",
+      "close": "Zatvori",
+      "prev": "Prethodna",
+      "next": "Sledeća"
+    },
+    "i1": { "caption": "Venčanje u dvorištu, kasno leto", "alt": "Placeholder fotografija bara na venčanju u dvorištu" },
+    "i2": { "caption": "Lampice iznad terase", "alt": "Placeholder fotografija proslave na terasi" },
+    "i3": { "caption": "Zdravica, trideset sekundi pre govora", "alt": "Placeholder fotografija gostiju koji podižu čaše" },
+    "i4": { "caption": "Alat poređan pre servisa", "alt": "Placeholder fotografija barskog alata pre servisa" },
+    "i5": { "caption": "Pult, obučen u hrast i mesing", "alt": "Placeholder fotografija barskog pulta" },
+    "i6": { "caption": "Piće dobrodošlice, korporativno predstavljanje", "alt": "Placeholder fotografija pića dobrodošlice" },
+    "i7": { "caption": "Stanica za dekoraciju, usred servisa", "alt": "Placeholder fotografija stanice za dekoraciju" },
+    "i8": { "caption": "Prijem u vinogradu u zlatnom satu", "alt": "Placeholder fotografija prijema u vinogradu" },
+    "i9": { "caption": "Bistar led, sečen na dan događaja", "alt": "Placeholder fotografija ručno sečenog bistrog leda" },
+    "i10": { "caption": "Ručak posle krštenja, bezalkoholni meni", "alt": "Placeholder fotografija porodičnog slavlja" },
+    "i11": { "caption": "Poslednje porudžbine, pola tri", "alt": "Placeholder fotografija bara kasno u noć" },
+    "i12": { "caption": "Rođendan, osamdeset gostiju", "alt": "Placeholder fotografija bara na rođendanskoj proslavi" }
+  },
+
+  "services": {
+    "hero": {
+      "eyebrow": "Usluge i paketi",
+      "title": "Bar napravljen oko večeri koju planirate",
+      "text": "Pet vrsta događaja, tri paketa i ponuda pisana za vaš datum, vaš prostor i vaš spisak gostiju. Bez fiksnog cenovnika, jer nema dve iste večeri."
+    },
+    "types": {
+      "eyebrow": "Šta pokrivamo",
+      "title": "Pet vrsta večeri",
+      "text": "Svaka ima svoj ritam. Lista ispod svake kartice pokazuje šta tipična rezervacija te vrste obuhvata."
+    },
+    "weddings": {
+      "title": "Venčanja",
+      "short": "Autorski koktel za mladence, piće dobrodošlice za aperitiv i bar koji drži podijum punim do poslednje pesme.",
+      "long": "Od pića dobrodošlice dok gosti stižu do poslednje ture kada bend spakuje instrumente. Koordinišemo se direktno sa vašim organizatorom, keteringom i prostorom, da bar nikada ne postane još jedna stvar o kojoj morate da brinete.",
+      "i1": "Autorski koktel osmišljen za mladence",
+      "i2": "Pića dobrodošlice i posluživanje šampanjca za zdravice",
+      "i3": "Štampani meniji usklađeni sa vašim pozivnicama",
+      "i4": "Obilazak prostora i planiranje satnice sa vašim domaćinom"
+    },
+    "private": {
+      "title": "Privatne proslave",
+      "short": "Krovne terase, vile, bašte i stanovi. Donosimo bar, led i ritam usluge kakav dobra žurka traži.",
+      "long": "Kućne žurke, krovne terase, vile i večeri u bašti. Kompaktan bar koji prolazi kroz obična vrata, meni od četiri ili pet pića i ekipa koja zna kada treba točiti brzo, a kada usporiti.",
+      "i1": "Kompaktan modularni bar za uske prostore",
+      "i2": "Meni prilagođen ukusu domaćina",
+      "i3": "Čaše, led i dekoracija uključeni",
+      "i4": "Potpuno raspremanje pre odlaska"
+    },
+    "corporate": {
+      "title": "Korporativni događaji",
+      "short": "Predstavljanja, konferencije i večeri za klijente — brendirana pića, kratki redovi i faktura koju vaše finansije prihvataju bez uzdaha.",
+      "long": "Predstavljanja, konferencije, proslave za zaposlene i večeri za klijente. Planiramo prema vršnom opterećenju — petnaest minuta nakon završetka izlaganja — da niko ne provede pauzu za umrežavanje u redu.",
+      "i1": "Brendirana pića, dekoracija i meni kartice",
+      "i2": "Planiranje protoka za veliki broj gostiju odjednom",
+      "i3": "Bezalkoholni meni istog standarda",
+      "i4": "Faktura na firmu, osiguranje i dozvole u redu"
+    },
+    "birthdays": {
+      "title": "Rođendani",
+      "short": "Od jubilarne večere za dvanaestoro do žurke u magacinu za dvesta ljudi, sastavljeno oko pića koja slavljenik zaista voli.",
+      "long": "Jubilarne večere, iznenađenja i duge noći u iznajmljenim prostorima. Listu gradimo oko onoga što slavljenik zaista pije, a jedno iznenađenje čuvamo za trenutak kada stigne torta.",
+      "i1": "Meni sastavljen oko slavljenika",
+      "i2": "Rođendanski koktel serviran za stolom",
+      "i3": "Fleksibilne sate ako se noć oduži",
+      "i4": "Bezalkoholna pića i mokteli za sve uzraste"
+    },
+    "celebrations": {
+      "title": "Slavlja",
+      "short": "Krštenja, godišnjice, veridbe i doček — uključujući nežne, bezalkoholne menije za porodična okupljanja.",
+      "long": "Krštenja, godišnjice, veridbe, diplomiranja i doček — dnevni događaji sa gostima svih uzrasta, gde bezalkoholna polovina menija znači jednako koliko i sve ostalo.",
+      "i1": "Kompletan bezalkoholni meni, a ne naknadna misao",
+      "i2": "Dnevni servis i ritam prilagođen porodici",
+      "i3": "Tiho postavljanje oko obreda ili ceremonije",
+      "i4": "Manji gabarit bara za porodične kuće"
+    },
+    "other": {
+      "title": "Nešto drugo",
+      "long": "Otvaranja galerija, završeci snimanja, predstavljanja proizvoda, privatne degustacije, koktel radionice za tim. Ako postoje ljudi i razlog da se podigne čaša, možemo da napravimo bar.",
+      "i1": "Vođene degustacije i radionice",
+      "i2": "Preuzimanja barova i pop-up događaji",
+      "i3": "Flaširani kokteli za poklon",
+      "i4": "Višednevni festivali i rezidencije"
+    },
+    "packages": {
+      "eyebrow": "Paketi",
+      "title": "Tri polazne tačke",
+      "text": "Shvatite ih kao okvir, a ne kao fiksnu ponudu. Svaka ponuda se piše prema broju gostiju, prostoru i satnici — recite nam šta vam treba i prilagodićemo se.",
+      "price": "Cena na upit",
+      "note": "Ponuda po događaju",
+      "cta": "Zatražite ponudu",
+      "footnote": "Putovanje van našeg standardnog područja rada, dodatni sati, dodatni barovi i posebne dozvole obračunavaju se posebno i uvek se dogovaraju unapred.",
+      "p1": {
+        "name": "Essential",
+        "tagline": "Kamerna okupljanja, do oko 50 gostiju",
+        "i1": "Modularni bar, postavljamo ga i raspremamo mi",
+        "i2": "Meni od četiri koktela, jedan bezalkoholni",
+        "i3": "Dva profesionalna bartendera",
+        "i4": "Čaše, led i dekoracija",
+        "i5": "Četiri sata servisa"
+      },
+      "p2": {
+        "badge": "Najčešći izbor",
+        "name": "Premium",
+        "tagline": "Venčanja i proslave od otprilike 50 do 150 gostiju",
+        "i1": "Sve iz paketa Essential",
+        "i2": "Meni od šest koktela, dva bezalkoholna",
+        "i3": "Jedan autorski koktel osmišljen za vas",
+        "i4": "Tri bartendera i pomoćnik",
+        "i5": "Ručno sečen bistar led i štampani meniji",
+        "i6": "Šest sati servisa, uz piće dobrodošlice"
+      },
+      "p3": {
+        "name": "Signature",
+        "tagline": "Velika slavlja i događaji sa više barova",
+        "i1": "Sve iz paketa Premium",
+        "i2": "Dva ili više barova u prostoru",
+        "i3": "Meni po meri sa tri autorska koktela",
+        "i4": "Posluživanje šampanjca i vina uz bar",
+        "i5": "Prednja strana bara obučena prema vašoj dekoraciji",
+        "i6": "Otvorena satnica, uz kasnonoćni servis"
+      }
+    },
+    "addons": {
+      "eyebrow": "Dodajte uz bilo koji paket",
+      "title": "Dodaci vredni razmatranja",
+      "a1": {
+        "title": "Posluživanje sa poslužavnika",
+        "text": "Pića koja se gostima nose na poslužavnicima dok stižu, tako da niko ne mora da nađe bar pre nego što nađe svoje mesto."
+      },
+      "a2": {
+        "title": "Koktel radionica",
+        "text": "Vođena sesija od 45 minuta za do dvadeset gostiju — tri pića napravljena, probana i razložena na sastojke."
+      },
+      "a3": {
+        "title": "Flaširani pokloni",
+        "text": "Vaš autorski koktel flaširan, sa etiketom i pečatom, kao poklon koji gosti nose kući."
+      },
+      "a4": {
+        "title": "Kasnonoćni servis",
+        "text": "Kratka, jaka lista za poslednja dva sata: kokteli sa espresom, digestivi i jedno vrlo hladno pivo."
+      }
+    },
+    "faq": {
+      "eyebrow": "Dobro je znati",
+      "title": "Pitanja koja najčešće dobijamo",
+      "q1": "Koliko unapred treba da rezervišemo?",
+      "a1": "Za venčanja u sezoni, šest do dvanaest meseci je komforno. Manje proslave su često moguće i sa nekoliko nedelja najave — uvek pitajte, jer otkazivanja se dešavaju.",
+      "q2": "Da li vi obezbeđujete alkohol?",
+      "a2": "Najčešće da, i to je uključeno u ponudu. Ako vaš prostor zahteva da piće obezbedite sami, rado radimo i kao bar bez pića.",
+      "q3": "Šta vam je potrebno od prostora?",
+      "a3": "Ravan prostor od oko tri sa dva metra, jedna obična utičnica i pristup za istovar. Tekuća voda nije potrebna — donosimo svoju.",
+      "q4": "Koliko gostiju možete da uslužite?",
+      "a4": "Računamo jednog bartendera na pedeset gostiju. Iznad tri stotine obično predlažemo drugi bar, umesto dužeg reda.",
+      "q5": "Da li putujete?",
+      "a5": "Da. Putovanje unutar našeg standardnog područja je uključeno; sve dalje obračunavamo otvoreno, uključujući smeštaj kada rani dolazak to zahteva."
+    }
+  },
+
+  "contact": {
+    "hero": {
+      "eyebrow": "Kontakt",
+      "title": "Popričajmo o vašem veču",
+      "text": "Pišite ili pozovite — kako vam odgovara. Na svaki upit odgovaramo lično, obično u roku od dva radna dana."
+    },
+    "details": {
+      "eyebrow": "Podaci",
+      "title": "Kako da nas dobijete",
+      "emailLabel": "Imejl",
+      "emailNote": "Najbolje za upite sa datumima, prostorom i brojem gostiju.",
+      "phoneLabel": "Telefon",
+      "phoneNote": "Od ponedeljka do subote, 10.00–19.00. WhatsApp na isti broj.",
+      "locationLabel": "Sedište",
+      "locationNote": "Radimo u celom regionu. Dalja putovanja na upit.",
+      "areaLabel": "Područje rada",
+      "areaNote": "Putovanje unutar ovog područja uključeno je u svaku ponudu."
+    },
+    "social": {
+      "eyebrow": "Pratite nas",
+      "title": "Pogledajte šta smo točili prošlog vikenda",
+      "text": "Novi meniji, priprema iza šanka i fotografije sa skorašnjih događaja prvo idu na društvene mreže. To je i najbrži način da nam pošaljete kratko pitanje."
+    },
+    "info": {
+      "eyebrow": "Praktično",
+      "title": "Pre nego što nam pišete",
+      "text": "Prva poruka sa ovih pet stvari omogućava nam da odgovorimo pravom ponudom, a ne spiskom pitanja.",
+      "i1": "Datum, ili dva-tri datuma o kojima razmišljate",
+      "i2": "Prostor, ili bar grad i vrsta prostora",
+      "i3": "Otprilike koliko gostiju očekujete",
+      "i4": "Kakav je događaj i koliko dugo bar treba da radi",
+      "i5": "Sve što vam je važno: omiljeno piće, tema, okvirni budžet",
+      "cta": "Pišite nam"
+    },
+    "hours": {
+      "title": "Radno vreme kancelarije",
+      "weekdays": "Ponedeljak – petak",
+      "saturday": "Subota",
+      "sunday": "Nedelja",
+      "closed": "Samo događaji",
+      "response": "Uobičajen odgovor",
+      "responseValue": "U roku od 2 radna dana"
+    },
+    "area": {
+      "eyebrow": "Pokrivenost",
+      "title": "Gde točimo",
+      "text": "Naše standardno područje rada navedeno je ispod. Sve dalje je sasvim moguće — put i smeštaj se jednostavno obračunavaju posebno i dogovaraju pre bilo kakve rezervacije.",
+      "elsewhere": "Ostalo na upit"
+    },
+    "cta": {
+      "title": "Dovoljna je jedna poruka",
+      "text": "Pošaljite nam datum i mesto. Iskreno ćemo vam reći da li smo slobodni i šta bismo predložili.",
+      "email": "Pošaljite imejl",
+      "call": "Pozovite nas"
+    }
+  },
+
+  "cta": {
+    "title": "Recite nam kakvo veče planirate",
+    "text": "Termini u sezoni brzo nestaju. Pošaljite nam detalje i vraćamo se sa predlogom i ponudom — obično u roku od dva radna dana.",
+    "primary": "Kontaktirajte nas",
+    "secondary": "Pogledajte pakete"
+  },
+
+  "footer": {
+    "about": "Putujući koktel bar za venčanja, privatne proslave i korporativne događaje. Meni po meri, profesionalni bartenderi i bar napravljen za prostor u kojem stoji.",
+    "explore": "Istražite",
+    "services": "Usluge",
+    "contact": "Kontakt",
+    "rights": "Sva prava zadržana.",
+    "responsibly": "Uživajte odgovorno. 18+"
+  }
+}

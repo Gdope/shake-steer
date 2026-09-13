@@ -1,0 +1,493 @@
+{
+  "meta": {
+    "home": {
+      "title": "Shake&Steer — exklusives Cocktail-Catering",
+      "description": "Shake&Steer ist eine mobile Cocktailbar für Hochzeiten, private Feiern und Firmenevents. Maßgeschneiderte Karten, professionelle Barkeeper und eine Bar, die so gut aussieht, wie sie ausschenkt."
+    },
+    "about": {
+      "title": "Über uns — Cocktail-Catering von Shake&Steer",
+      "description": "Die Geschichte hinter Shake&Steer: eine mobile Cocktailbar, gebaut auf guten Zutaten, unaufdringlichem Service und Karten, die für einen einzigen Abend geschrieben werden."
+    },
+    "menu": {
+      "title": "Karte — Cocktail-Catering von Shake&Steer",
+      "description": "Zehn Signature-Cocktails von Shake&Steer, dazu ein PDF mit der vollständigen Liste von rund siebzig Drinks samt Beschreibungen und Zutaten."
+    },
+    "gallery": {
+      "title": "Galerie — Cocktail-Catering von Shake&Steer",
+      "description": "Aufnahmen von Shake&Steer-Bars auf Hochzeiten, privaten Feiern, Firmenabenden und Familienfesten."
+    },
+    "services": {
+      "title": "Leistungen & Pakete — Shake&Steer",
+      "description": "Cocktail-Catering für Hochzeiten, private Feiern, Firmenevents, Geburtstage und Familienfeste. Drei Pakete, jedes Angebot individuell kalkuliert."
+    },
+    "contact": {
+      "title": "Kontakt — Cocktail-Catering von Shake&Steer",
+      "description": "Sprechen Sie uns an: Hochzeit, Feier, Firmenevent oder Familienfest. E-Mail, Telefon, Einsatzgebiet und Social Media."
+    }
+  },
+
+  "nav": {
+    "home": "Start",
+    "about": "Über uns",
+    "menu": "Karte",
+    "gallery": "Galerie",
+    "services": "Leistungen",
+    "contact": "Kontakt",
+    "language": "Sprache",
+    "theme": "Design wechseln",
+    "menuButton": "Menü",
+    "skip": "Zum Inhalt springen"
+  },
+
+  "home": {
+    "hero": {
+      "eyebrow": "Mobile Cocktailbar & Event-Catering",
+      "tagline": "Handwerkliche Cocktails — dort, wo Sie feiern.",
+      "text": "Eine mobile Cocktailbar für Hochzeiten, private Feiern und Firmenabende. Maßgeschneiderte Karten, erfahrene Barkeeper und eine Bar, die so gut aussieht, wie sie ausschenkt.",
+      "ctaMenu": "Zur Karte",
+      "ctaBook": "Event planen",
+      "scroll": "Scrollen"
+    },
+    "intro": {
+      "eyebrow": "Wer wir sind",
+      "title": "Eine Bar, die zu Ihnen kommt — und ein Abend, der bleibt",
+      "text1": "Shake&Steer baut eine komplette Cocktailbar in Ihrer Location auf: Tresen, Gläser, Eis, Garnituren und die Menschen dahinter. Alles wird in unserer eigenen Werkstatt vorbereitet und vor Ort montiert, Stunden bevor Ihr erster Gast eintrifft.",
+      "text2": "Wir arbeiten mit einer kurzen, saisonalen Auswahl eigener Kreationen und einem dicken Buch voller Klassiker. So gehört jede Karte, die wir schreiben, genau diesem einen Abend — und niemandem sonst.",
+      "link": "Unsere Geschichte lesen",
+      "plate": "Unsere mobile Bar",
+      "imageAlt": "Platzhalterfoto eines Shake&Steer-Baraufbaus"
+    },
+    "stats": {
+      "events": "Betreute Events",
+      "cocktails": "Cocktails auf der Karte",
+      "guests": "Gäste an der Bar",
+      "years": "Jahre Erfahrung"
+    },
+    "events": {
+      "eyebrow": "Was wir machen",
+      "title": "Anlässe, für die wir ausschenken",
+      "text": "Fünf Arten von Abend, ein Standard. Jedes Format lässt sich skalieren — von zwanzig Gästen im Wohnzimmer bis zu fünfhundert im Festzelt.",
+      "moreTitle": "Etwas anderes im Sinn?",
+      "moreText": "Produktlaunches, Drehschluss-Partys, Galerieeröffnungen, private Tastings. Wo Menschen und ein Anlass sind, bauen wir eine Bar.",
+      "moreLink": "Alle Leistungen ansehen"
+    },
+    "signature": {
+      "eyebrow": "Aus der Karte",
+      "title": "Vier unserer Signatures",
+      "text": "Zehn eigene Kreationen stehen neben rund siebzig Klassikern. Diese vier sind meist als Erstes ausverkauft.",
+      "link": "Ganze Karte ansehen"
+    },
+    "process": {
+      "eyebrow": "So läuft es ab",
+      "title": "Vier Schritte von der ersten Nachricht bis zum letzten Drink",
+      "s1": {
+        "title": "Wir sprechen",
+        "text": "Nennen Sie uns Datum, Ort und ungefähre Gästezahl. Wir antworten mit freien Terminen und ein paar ehrlichen Fragen."
+      },
+      "s2": {
+        "title": "Karte entwerfen",
+        "text": "Wir schlagen eine Karte vor, die zu Ihrem Geschmack und Ihrer Location passt — inklusive alkoholfreier Drinks, bei denen sich niemand benachteiligt fühlt."
+      },
+      "s3": {
+        "title": "Wir bauen auf",
+        "text": "Bar, Eis, Gläser, Garnituren und Team kommen früh, bauen leise auf und hinterlassen den Raum genau so, wie wir ihn vorgefunden haben."
+      },
+      "s4": {
+        "title": "Sie feiern",
+        "text": "Sie verbringen den Abend mit Ihren Gästen. Um alles hinter dem Tresen kümmern wir uns."
+      }
+    },
+    "quote": {
+      "text": "Sie haben aus einer Ecke eines alten Steinhofs für einen Abend die beste Bar der Stadt gemacht. Die Hälfte unserer Gäste fragt bis heute nach dem Rezept.",
+      "role": "— Hochzeit, September"
+    }
+  },
+
+  "about": {
+    "hero": {
+      "eyebrow": "Unsere Geschichte",
+      "title": "Neun Jahre Bars bauen in den Räumen anderer Leute",
+      "text": "Shake&Steer begann mit einem Flightcase, zwei Barkeepern und einer sturen Idee: Ein Cocktail auf einer privaten Feier sollte genauso gut sein wie einer aus einer großartigen Bar."
+    },
+    "story": {
+      "eyebrow": "Wie es anfing",
+      "title": "Ein Flightcase, eine Hochzeit, kein Plan B",
+      "text1": "Das erste Event war die Hochzeit eines Freundes in einem Innenhof ohne fließendes Wasser und mit einer einzigen Steckdose. Wir bauten eine Bar aus geliehenen Kisten, trugen Eis zwei Stockwerke hoch und servierten zweihundertvierzig Drinks.",
+      "text2": "Nichts an diesem Abend war einfach, und alles daran war es wert, wiederholt zu werden. Seitdem haben sich die Flightcases vermehrt, aus der Bar ist ein modularer Tresen aus eigener Entwicklung geworden und das Team ist gewachsen — die Arbeitsweise aber nicht. Wir kommen früh, bereiten alles von Hand vor und behandeln den einen wichtigen Abend eines Menschen genau als das.",
+      "text3": "Heute schenken wir auf Hochzeiten in Weinbergen aus, auf Geburtstagen in Wohnungen, bei Launches in Galerien und bei Taufen in Familienhäusern. Der Maßstab ändert sich. Der Standard nicht.",
+      "plate": "Die erste Saison",
+      "imageAlt": "Platzhalterfoto von einem frühen Shake&Steer-Event"
+    },
+    "values": {
+      "eyebrow": "Was uns unterscheidet",
+      "title": "Vier Dinge, bei denen wir keine Kompromisse machen",
+      "v1": {
+        "title": "Alles selbst gemacht",
+        "text": "Sirupe, Cordials, Shrubs und Infusionen entstehen in unserer eigenen Werkstatt in kleinen Chargen, datiert und verkostet, bevor sie das Haus verlassen. Fertiger Sauermix war noch nie auf einem unserer Wagen."
+      },
+      "v2": {
+        "title": "Eis als Zutat",
+        "text": "Wir schneiden unsere klaren Blöcke selbst: große Würfel für spirituosenbetonte Drinks, Crushed Ice für Juleps, lange Spears für Highballs. Kälte und langsame Verdünnung sind der halbe Grund, warum ein Drink auch am Glasboden noch stimmt."
+      },
+      "v3": {
+        "title": "Eine Bar für den Raum",
+        "text": "Unsere Tresen sind modular, die Front wird passend zur Location eingekleidet — Eiche, gebürstetes Messing, Marmor oder drapiertes Leinen. Die Bar soll aussehen, als hätte sie immer dort gestanden."
+      },
+      "v4": {
+        "title": "Service, den man nur bemerkt, wenn man ihn braucht",
+        "text": "Unsere Barkeeper lesen den Raum: schnell und leise während der Reden, großzügig und herzlich an der Tanzfläche — und nie das Lauteste auf den Fotos."
+      }
+    },
+    "craft": {
+      "eyebrow": "Das Erlebnis",
+      "title": "Was Ihre Gäste tatsächlich spüren",
+      "text1": "Ein Gast tritt an die Bar und findet eine kurze, gut lesbare Karte — vier oder fünf Drinks, für diesen Abend ausgewählt, auf gutem Papier gedruckt, mit einer alkoholfreien Option, die gleichwertig dasteht und nicht wie eine Entschuldigung.",
+      "text2": "Er wird mit Namen begrüßt, wenn wir ihn kennen, in unter neunzig Sekunden bedient und bekommt ein Glas, das richtig kalt, richtig ausbalanciert und schön genug für ein Foto ist. Dann geht er zurück zur Feier — und genau darum geht es.",
+      "link": "Karte ansehen",
+      "plate": "Hinter dem Tresen",
+      "imageAlt": "Platzhalterfoto eines Cocktails kurz vor dem Servieren"
+    },
+    "team": {
+      "eyebrow": "Die Menschen",
+      "title": "Ein kleiner Kern und ein Team, dem wir vertrauen",
+      "text1": "Jedes Event leitet einer unserer erfahrenen Barkeeper, der von der ersten Kiste bis zum letzten Karton vor Ort ist. Um ihn herum bauen wir ein Team passend zur Gästezahl — in der Regel ein Barkeeper pro fünfzig Gäste, dazu ein Barback und ein Runner bei größeren Abenden.",
+      "text2": "Alle, die an einer Shake&Steer-Bar arbeiten, haben Zeit in einer echten verbracht. Sie kommen in Uniform, bringen ihr eigenes Werkzeug mit und wissen, dass der Unterschied zwischen einem guten und einem großartigen Abend meist in kleinen Aufmerksamkeiten liegt.",
+      "plate": "Das Team",
+      "imageAlt": "Platzhalterfoto des Shake&Steer-Teams"
+    },
+    "quote": {
+      "text": "Wir hatten eine Party geplant und bekamen einen Abend. Drei Monate später spricht man immer noch über die Drinks statt über die Sitzordnung.",
+      "role": "— Jubiläumsdinner"
+    }
+  },
+
+  "menu": {
+    "hero": {
+      "eyebrow": "Die Drinks",
+      "title": "Zehn Signatures, siebzig Gründe Ja zu sagen",
+      "text": "Diese zehn sind die Hauskreationen, für die man uns kennt. Dahinter steht ein ganzes Buch aus Klassikern, Spritz-Varianten, Tiki-Drinks und alkoholfreien Serves — alles im PDF am Ende dieser Seite."
+    },
+    "signature": {
+      "eyebrow": "Signature-Kreationen",
+      "title": "Die Hauskarte",
+      "text": "Zweimal im Jahr neu geschrieben, entlang der Saison. Jeder dieser Drinks lässt sich für große Events vorbereiten, ohne etwas zu verlieren."
+    },
+    "tags": {
+      "whisky": "Whisky",
+      "gin": "Gin",
+      "vodka": "Wodka",
+      "rum": "Rum",
+      "tequila": "Tequila",
+      "mezcal": "Mezcal",
+      "champagne": "Champagner",
+      "zeroproof": "Alkoholfrei"
+    },
+    "c1": {
+      "desc": "Gereifter Whisky, weich gemacht mit Feige und Vanille, vollendet mit einem Hauch Kirschholzrauch, der am Tisch freigesetzt wird.",
+      "alt": "Platzhalterbild des Cocktails Velvet Sovereign"
+    },
+    "c2": {
+      "desc": "Gin, gerührt mit Pflaumenlikör und goldener Kamille — hell wie die Nachmittagssonne und doppelt so leicht auszutrinken.",
+      "alt": "Platzhalterbild des Cocktails Gilded Plum"
+    },
+    "c3": {
+      "desc": "Rauchiger Mezcal, Rose und rosa Grapefruit über einem langen Block Klareis — vorne blumig, hinten leise rauchig.",
+      "alt": "Platzhalterbild des Cocktails Rosé Noir"
+    },
+    "c4": {
+      "desc": "Küsten-Gin, Tonic mit Meersalz und ein Cordial aus grüner Olive und Rosmarin. Klar, salzig und im August unmöglich langsam zu trinken.",
+      "alt": "Platzhalterbild des Cocktails Adriatic Mist"
+    },
+    "c5": {
+      "desc": "Schwarze Johannisbeere und gebrannte Orange unter langsam aufgegossenem Champagner, im gekühlten Flöte mit einem einzelnen Blattgold.",
+      "alt": "Platzhalterbild des Cocktails Bordeaux Ember"
+    },
+    "c6": {
+      "desc": "Wodka mit Veilchen und Brombeere, mit Schaumwein verlängert und serviert in der Farbe des Himmels zehn Minuten nach Sonnenuntergang.",
+      "alt": "Platzhalterbild des Cocktails The Violet Hour"
+    },
+    "c7": {
+      "desc": "Gurke, grüner Apfel und Liebstöckel mit Verjus-Cordial und Soda. Genauso durchdacht wie die Drinks mit Spirituose.",
+      "alt": "Platzhalterbild des Cocktails Garden Room"
+    },
+    "c8": {
+      "desc": "Dunkler Rum, geröstete Ananas und Sternanis, hoch über Crushed Ice serviert, mit einem Rand aus Zimt und Zucker.",
+      "alt": "Platzhalterbild des Cocktails Amber & Anise"
+    },
+    "c9": {
+      "desc": "Tequila Blanco mit blauer Schmetterlingserbse, Limette und einem Cordial aus gesalzenem Honig, der beim Verdünnen die Farbe wechselt.",
+      "alt": "Platzhalterbild des Cocktails Midnight Harbour"
+    },
+    "c10": {
+      "desc": "Holunderblüte, weißer Pfirsich und Champagner mit einem in Bitter getränkten Zuckerwürfel — unser liebster Begrüßungsdrink für Hochzeiten.",
+      "alt": "Platzhalterbild des Cocktails Fête Royale"
+    },
+    "full": {
+      "eyebrow": "Das ganze Buch",
+      "title": "Rund siebzig Drinks in sieben Kapiteln",
+      "text": "Ihre finale Karte besteht meist aus fünf bis acht Drinks aus diesem Buch. Die vollständige Liste mit Beschreibungen und Zutaten steht im PDF unten."
+    },
+    "cat": {
+      "signature": "Signature-Kreationen",
+      "classics": "Klassiker, neu gedacht",
+      "sparkling": "Schaumwein & Champagner",
+      "aperitivo": "Aperitivo & Spritz",
+      "tropical": "Tropisch & Tiki",
+      "zeroproof": "Alkoholfrei",
+      "digestif": "Nach dem Essen"
+    },
+    "download": {
+      "eyebrow": "Vollständige Karte",
+      "title": "Nehmen Sie die ganze Liste mit",
+      "text": "Rund siebzig Cocktails mit Beschreibung und vollständigen Zutaten, sauber für den Druck auf A4 gesetzt.",
+      "button": "Ganze Karte herunterladen (PDF)",
+      "en": "PDF auf Englisch",
+      "sr": "PDF auf Serbisch",
+      "hint": "Der Hauptbutton folgt der Sprache in der Kopfzeile: Serbisch bei SR, sonst Englisch."
+    },
+    "cta": {
+      "title": "Eine Karte, geschrieben für Ihren Abend?",
+      "text": "Schicken Sie uns Datum, Location und die Art von Abend, die Ihnen vorschwebt. Wir melden uns mit einem Kartenentwurf, den Sie sich schon in den Händen Ihrer Gäste vorstellen können.",
+      "link": "Karte ansehen"
+    }
+  },
+
+  "gallery": {
+    "hero": {
+      "eyebrow": "Galerie",
+      "title": "Abende, die wir ausgeschenkt haben",
+      "text": "Bars in Innenhöfen, Ballsälen, Weinbergen und Wohnzimmern. Klicken Sie ein Bild an, um es größer zu sehen."
+    },
+    "note": "Alle Bilder auf dieser Seite sind Platzhalter. Ersetzen Sie die Dateien in /assets/img/ durch Ihre eigenen und behalten Sie die Dateinamen bei.",
+    "lightbox": {
+      "label": "Bildanzeige",
+      "close": "Schließen",
+      "prev": "Zurück",
+      "next": "Weiter"
+    },
+    "i1": { "caption": "Hochzeit im Innenhof, Spätsommer", "alt": "Platzhalterfoto einer Hochzeitsbar im Innenhof" },
+    "i2": { "caption": "Lichterketten über der Terrasse", "alt": "Platzhalterfoto einer Terrassenfeier" },
+    "i3": { "caption": "Ein Toast, dreißig Sekunden vor den Reden", "alt": "Platzhalterfoto von Gästen mit erhobenen Gläsern" },
+    "i4": { "caption": "Werkzeug, aufgereiht vor dem Service", "alt": "Platzhalterfoto von Barwerkzeug vor dem Service" },
+    "i5": { "caption": "Der Tresen, eingekleidet in Eiche und Messing", "alt": "Platzhalterfoto des Bartresens" },
+    "i6": { "caption": "Begrüßungsdrink, Firmenlaunch", "alt": "Platzhalterfoto eines Begrüßungsdrinks" },
+    "i7": { "caption": "Garniturstation mitten im Service", "alt": "Platzhalterfoto der Garniturstation" },
+    "i8": { "caption": "Empfang im Weinberg zur goldenen Stunde", "alt": "Platzhalterfoto eines Empfangs im Weinberg" },
+    "i9": { "caption": "Klareis, am Morgen des Events geschnitten", "alt": "Platzhalterfoto von handgeschnittenem Klareis" },
+    "i10": { "caption": "Tauf-Essen, alkoholfreie Karte", "alt": "Platzhalterfoto eines Familienfestes" },
+    "i11": { "caption": "Letzte Bestellungen, halb drei", "alt": "Platzhalterfoto der Bar spät in der Nacht" },
+    "i12": { "caption": "Geburtstagsfeier, achtzig Gäste", "alt": "Platzhalterfoto einer Geburtstagsbar" }
+  },
+
+  "services": {
+    "hero": {
+      "eyebrow": "Leistungen & Pakete",
+      "title": "Eine Bar, gebaut um den Abend, den Sie planen",
+      "text": "Fünf Arten von Event, drei Pakete und ein Angebot, geschrieben für Ihr Datum, Ihre Location und Ihre Gästeliste. Keine feste Preisliste, weil kein Abend dem anderen gleicht."
+    },
+    "types": {
+      "eyebrow": "Was wir betreuen",
+      "title": "Fünf Arten von Abend",
+      "text": "Jede hat ihren eigenen Rhythmus. Die Liste unter jeder Karte zeigt, was eine typische Buchung dieser Art enthält."
+    },
+    "weddings": {
+      "title": "Hochzeiten",
+      "short": "Ein Signature-Cocktail für das Paar, ein Begrüßungsdrink zum Aperitif und eine Bar, die die Tanzfläche bis zum letzten Lied füllt.",
+      "long": "Vom Begrüßungsdrink beim Eintreffen bis zur letzten Runde, wenn die Band einpackt. Wir stimmen uns direkt mit Ihrer Planerin, dem Catering und der Location ab, damit die Bar nie zu einer weiteren Aufgabe für Sie wird.",
+      "i1": "Ein Signature-Cocktail, für das Paar entwickelt",
+      "i2": "Begrüßungsdrinks und Champagnerservice zu den Reden",
+      "i3": "Gedruckte Karten, abgestimmt auf Ihre Papeterie",
+      "i4": "Locationbesuch und Ablaufplanung vor Ort"
+    },
+    "private": {
+      "title": "Private Feiern",
+      "short": "Dachterrassen, Villen, Gärten und Wohnungen. Wir bringen die Bar, das Eis und das Servicetempo, das eine gute Party braucht.",
+      "long": "Hauspartys, Dachterrassen, Villen und Gartenabende. Eine kompakte Bar, die durch eine normale Tür passt, eine Karte aus vier oder fünf Drinks und ein Team, das weiß, wann schnell ausgeschenkt wird und wann man das Tempo herausnimmt.",
+      "i1": "Kompakte modulare Bar für enge Räume",
+      "i2": "Karte, abgestimmt auf den Geschmack der Gastgeber",
+      "i3": "Gläser, Eis und Garnituren inklusive",
+      "i4": "Vollständiges Aufräumen vor dem Abbau"
+    },
+    "corporate": {
+      "title": "Firmenevents",
+      "short": "Launches, Konferenzen und Kundenabende — gebrandete Serves, kurze Schlangen und eine Rechnung, die Ihre Buchhaltung ohne Seufzen annimmt.",
+      "long": "Launches, Konferenzen, Mitarbeiterfeiern und Kundenabende. Wir planen für die Spitze — die fünfzehn Minuten nach einer Keynote — damit niemand die Networking-Stunde in der Schlange verbringt.",
+      "i1": "Gebrandete Serves, Garnituren und Menükarten",
+      "i2": "Durchsatzplanung für große Ankunftswellen",
+      "i3": "Alkoholfreie Karte auf gleichem Niveau",
+      "i4": "Firmenrechnung, Versicherung und Genehmigungen geregelt"
+    },
+    "birthdays": {
+      "title": "Geburtstage",
+      "short": "Vom runden Geburtstagsessen zu zwölft bis zur Lagerhallenparty für zweihundert — rund um die Drinks, die das Geburtstagskind wirklich mag.",
+      "long": "Runde Geburtstage, Überraschungspartys und lange Nächte in gemieteten Räumen. Wir bauen die Karte um das, was das Geburtstagskind tatsächlich trinkt, und heben eine Überraschung für den Moment auf, in dem die Torte kommt.",
+      "i1": "Karte rund um das Geburtstagskind",
+      "i2": "Ein Geburtstagsdrink, am Tisch serviert",
+      "i3": "Flexible Stunden, wenn der Abend länger wird",
+      "i4": "Alkoholfreie Drinks und Mocktails für jedes Alter"
+    },
+    "celebrations": {
+      "title": "Familienfeste",
+      "short": "Taufen, Jubiläen, Verlobungen und Heimkehrfeiern — mit sanften, alkoholfreien Karten für Familienrunden.",
+      "long": "Taufen, Jubiläen, Verlobungen, Abschlussfeiern und Heimkehrfeste — Tagesveranstaltungen mit gemischten Altersgruppen, bei denen die alkoholfreie Hälfte der Karte genauso viel zählt wie der Rest.",
+      "i1": "Vollwertige alkoholfreie Karte, kein Nachgedanke",
+      "i2": "Tagesservice und familienfreundliches Tempo",
+      "i3": "Leiser Aufbau rund um Zeremonie oder Gottesdienst",
+      "i4": "Kleinere Barfläche für Privathäuser"
+    },
+    "other": {
+      "title": "Etwas anderes",
+      "long": "Galerieeröffnungen, Drehschluss, Produktlaunches, private Tastings, Cocktail-Workshops fürs Team. Wo Menschen und ein Grund zum Anstoßen sind, bauen wir eine Bar.",
+      "i1": "Geführte Tastings und Workshops",
+      "i2": "Bar-Takeovers und Pop-ups",
+      "i3": "Cocktails in Flaschen als Geschenk",
+      "i4": "Mehrtägige Festivals und Residenzen"
+    },
+    "packages": {
+      "eyebrow": "Pakete",
+      "title": "Drei Ausgangspunkte",
+      "text": "Verstehen Sie diese als Rahmen, nicht als festes Angebot. Jedes Angebot wird für Ihre Gästezahl, Location und Dauer geschrieben — sagen Sie uns, was Sie brauchen, und wir passen es an.",
+      "price": "Preis auf Anfrage",
+      "note": "Angebot pro Event",
+      "cta": "Angebot anfragen",
+      "footnote": "Anfahrten außerhalb unseres Standardgebiets, Zusatzstunden, weitere Bars und Sondergenehmigungen werden separat kalkuliert und immer vorab abgestimmt.",
+      "p1": {
+        "name": "Essential",
+        "tagline": "Kleine Runden, bis etwa 50 Gäste",
+        "i1": "Modulare Bar, Auf- und Abbau durch uns",
+        "i2": "Karte mit vier Cocktails, einer alkoholfrei",
+        "i3": "Zwei professionelle Barkeeper",
+        "i4": "Gläser, Eis und Garnituren",
+        "i5": "Vier Stunden Service"
+      },
+      "p2": {
+        "badge": "Am häufigsten gewählt",
+        "name": "Premium",
+        "tagline": "Hochzeiten und Feiern mit etwa 50–150 Gästen",
+        "i1": "Alles aus Essential",
+        "i2": "Karte mit sechs Cocktails, zwei alkoholfrei",
+        "i3": "Ein Signature-Drink, für Sie entwickelt",
+        "i4": "Drei Barkeeper plus Barback",
+        "i5": "Handgeschnittenes Klareis und gedruckte Karten",
+        "i6": "Sechs Stunden Service, Begrüßungsdrink inklusive"
+      },
+      "p3": {
+        "name": "Signature",
+        "tagline": "Große Feste und Events mit mehreren Bars",
+        "i1": "Alles aus Premium",
+        "i2": "Zwei oder mehr Bars in der Location",
+        "i3": "Maßgeschneiderte Karte mit drei Hauskreationen",
+        "i4": "Champagner- und Weinservice neben der Bar",
+        "i5": "Barfront passend zu Ihrem Styling eingekleidet",
+        "i6": "Offene Stunden, dazu ein Late-Night-Service"
+      }
+    },
+    "addons": {
+      "eyebrow": "Zu jedem Paket dazu",
+      "title": "Extras, die sich lohnen",
+      "a1": {
+        "title": "Empfang mit Tabletts",
+        "text": "Drinks werden den Gästen beim Eintreffen auf Tabletts gereicht, damit niemand die Bar suchen muss, bevor er seinen Platz gefunden hat."
+      },
+      "a2": {
+        "title": "Cocktail-Workshop",
+        "text": "45 geführte Minuten für bis zu zwanzig Gäste — drei Drinks gemixt, verkostet und auseinandergenommen."
+      },
+      "a3": {
+        "title": "Flaschen als Gastgeschenk",
+        "text": "Ihr Signature-Cocktail in Flaschen, etikettiert und versiegelt, als Mitbringsel für Ihre Gäste."
+      },
+      "a4": {
+        "title": "Late-Night-Service",
+        "text": "Eine kurze, kräftige Karte für die letzten zwei Stunden: Espresso-Drinks, Digestifs und ein sehr kaltes Bier."
+      }
+    },
+    "faq": {
+      "eyebrow": "Gut zu wissen",
+      "title": "Häufige Fragen",
+      "q1": "Wie weit im Voraus sollten wir buchen?",
+      "a1": "Für Hochzeiten in der Hochsaison sind sechs bis zwölf Monate angenehm. Kleinere Feiern klappen oft mit wenigen Wochen Vorlauf — fragen Sie immer nach, Absagen kommen vor.",
+      "q2": "Stellen Sie den Alkohol?",
+      "a2": "In der Regel ja, und er ist im Angebot enthalten. Verlangt Ihre Location, dass Sie die Getränke selbst stellen, arbeiten wir gerne als reine Bar-Dienstleistung.",
+      "q3": "Was brauchen Sie von der Location?",
+      "a3": "Eine ebene Fläche von rund drei mal zwei Metern, eine normale Steckdose und eine Zufahrt zum Abladen. Fließendes Wasser ist nicht nötig — das bringen wir mit.",
+      "q4": "Wie viele Gäste können Sie bedienen?",
+      "a4": "Wir rechnen mit einem Barkeeper pro fünfzig Gäste. Ab dreihundert schlagen wir meist eine zweite Bar statt einer längeren Schlange vor.",
+      "q5": "Reisen Sie an?",
+      "a5": "Ja. Anfahrt innerhalb unseres Standardgebiets ist enthalten; alles Weitere kalkulieren wir offen, inklusive Übernachtung, wenn ein früher Aufbau sie nötig macht."
+    }
+  },
+
+  "contact": {
+    "hero": {
+      "eyebrow": "Kontakt",
+      "title": "Sprechen wir über Ihren Abend",
+      "text": "Schreiben oder anrufen — ganz wie Sie mögen. Wir beantworten jede Anfrage persönlich, meist innerhalb von zwei Werktagen."
+    },
+    "details": {
+      "eyebrow": "Daten",
+      "title": "So erreichen Sie uns",
+      "emailLabel": "E-Mail",
+      "emailNote": "Am besten für Anfragen mit Datum, Location und Gästezahl.",
+      "phoneLabel": "Telefon",
+      "phoneNote": "Montag bis Samstag, 10:00–19:00 Uhr. WhatsApp unter derselben Nummer.",
+      "locationLabel": "Sitz",
+      "locationNote": "Wir arbeiten in der ganzen Region. Weitere Anfahrten auf Anfrage.",
+      "areaLabel": "Einsatzgebiet",
+      "areaNote": "Anfahrt innerhalb dieses Gebiets ist in jedem Angebot enthalten."
+    },
+    "social": {
+      "eyebrow": "Folgen Sie uns",
+      "title": "Sehen Sie, was wir letztes Wochenende ausgeschenkt haben",
+      "text": "Neue Karten, Vorbereitung hinter dem Tresen und Bilder von aktuellen Events erscheinen zuerst in den sozialen Netzwerken. Dort erreichen Sie uns auch am schnellsten für eine kurze Frage."
+    },
+    "info": {
+      "eyebrow": "Praktisch",
+      "title": "Bevor Sie schreiben",
+      "text": "Eine erste Nachricht mit diesen fünf Punkten erlaubt uns, mit einem echten Vorschlag zu antworten statt mit einer Liste von Rückfragen.",
+      "i1": "Das Datum, oder die zwei bis drei Termine in der engeren Wahl",
+      "i2": "Die Location, oder wenigstens Stadt und Art des Raums",
+      "i3": "Wie viele Gäste Sie ungefähr erwarten",
+      "i4": "Um welche Art Event es geht und wie lange die Bar laufen soll",
+      "i5": "Alles, was Ihnen wichtig ist: ein Lieblingsdrink, ein Thema, ein Budgetrahmen",
+      "cta": "Schreiben Sie uns"
+    },
+    "hours": {
+      "title": "Bürozeiten",
+      "weekdays": "Montag – Freitag",
+      "saturday": "Samstag",
+      "sunday": "Sonntag",
+      "closed": "Nur Events",
+      "response": "Übliche Antwortzeit",
+      "responseValue": "Innerhalb von 2 Werktagen"
+    },
+    "area": {
+      "eyebrow": "Abdeckung",
+      "title": "Wo wir ausschenken",
+      "text": "Unser Standard-Einsatzgebiet steht unten. Alles Weitere ist ohne Weiteres möglich — Anfahrt und Übernachtung werden einfach separat kalkuliert und vor jeder Buchung abgestimmt.",
+      "elsewhere": "Weiteres auf Anfrage"
+    },
+    "cta": {
+      "title": "Eine Nachricht genügt",
+      "text": "Schicken Sie uns Datum und Ort. Wir sagen Ihnen ehrlich, ob wir frei sind und was wir vorschlagen würden.",
+      "email": "E-Mail schreiben",
+      "call": "Anrufen"
+    }
+  },
+
+  "cta": {
+    "title": "Erzählen Sie uns von Ihrem Abend",
+    "text": "In der Hochsaison sind Termine schnell vergeben. Schicken Sie uns die Eckdaten, und wir melden uns mit Vorschlag und Angebot — meist innerhalb von zwei Werktagen.",
+    "primary": "Kontakt aufnehmen",
+    "secondary": "Pakete ansehen"
+  },
+
+  "footer": {
+    "about": "Eine mobile Cocktailbar für Hochzeiten, private Feiern und Firmenevents. Maßgeschneiderte Karten, professionelle Barkeeper und eine Bar, gebaut für den Raum, in dem sie steht.",
+    "explore": "Entdecken",
+    "services": "Leistungen",
+    "contact": "Kontakt",
+    "rights": "Alle Rechte vorbehalten.",
+    "responsibly": "Bitte genießen Sie verantwortungsvoll. 18+"
+  }
+}

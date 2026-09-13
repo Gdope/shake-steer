@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500" role="img" aria-label="Cocktail placeholder">
+  <defs>
+    <linearGradient id="c10bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2d1030"/>
+      <stop offset="1" stop-color="#150d1c"/>
+    </linearGradient>
+    <radialGradient id="c10glow" cx="50%" cy="38%" r="62%">
+      <stop offset="0" stop-color="#efe3c8" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#efe3c8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="c10liq" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#efe3c8" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#efe3c8" stop-opacity=".55"/>
+    </linearGradient>
+    <!-- keeps the bubbles inside the drink instead of floating past the glass -->
+    <clipPath id="c10clip"><path d="M156,214 C160,268 178,296 200,300 C222,296 240,268 244,214 Z"/></clipPath>
+  </defs>
+
+  <rect width="400" height="500" fill="url(#c10bg)"/>
+  <ellipse cx="200" cy="210" rx="200" ry="190" fill="url(#c10glow)"/>
+
+  <!-- soft bokeh -->
+  <circle cx="62" cy="92" r="46" fill="#c9a35e" opacity=".07"/>
+  <circle cx="338" cy="404" r="62" fill="#efe3c8" opacity=".09"/>
+  <circle cx="326" cy="86" r="18" fill="#c9a35e" opacity=".12"/>
+
+  <!-- drink -->
+  <g>
+    <path d="M156,214 C160,268 178,296 200,300 C222,296 240,268 244,214 Z" fill="url(#c10liq)"/>
+    <g clip-path="url(#c10clip)"><circle cx="209" cy="296" r="3" fill="#f0e2c4" opacity=".35"/><circle cx="184" cy="367" r="2" fill="#f0e2c4" opacity=".35"/><circle cx="175" cy="254" r="5" fill="#f0e2c4" opacity=".35"/><circle cx="182" cy="301" r="4" fill="#f0e2c4" opacity=".35"/><circle cx="217" cy="300" r="3" fill="#f0e2c4" opacity=".35"/><circle cx="200" cy="275" r="2" fill="#f0e2c4" opacity=".35"/><circle cx="187" cy="378" r="5" fill="#f0e2c4" opacity=".35"/><circle cx="210" cy="357" r="4" fill="#f0e2c4" opacity=".35"/><circle cx="221" cy="376" r="3" fill="#f0e2c4" opacity=".35"/><circle cx="204" cy="299" r="2" fill="#f0e2c4" opacity=".35"/><circle cx="171" cy="334" r="5" fill="#f0e2c4" opacity=".35"/><circle cx="194" cy="265" r="4" fill="#f0e2c4" opacity=".35"/><circle cx="217" cy="372" r="3" fill="#f0e2c4" opacity=".35"/><circle cx="208" cy="363" r="2" fill="#f0e2c4" opacity=".35"/></g>
+    <g fill="none" stroke="#c9a35e" stroke-width="2.4" stroke-linejoin="round" opacity=".92">
+      <path d="M148,172 C148,258 170,304 200,310 C230,304 252,258 252,172 Z M196,310 L196,400 M204,310 L204,400 M148,400 a52,9 0 1,0 104,0 a52,9 0 1,0 -104,0 Z"/>
+    </g>
+    <ellipse cx="267.0" cy="186.0" rx="7" ry="3.4" fill="#d9a05b" opacity=".85" transform="rotate(0.0 267.0 186.0)"/><ellipse cx="264.4" cy="192.4" rx="7" ry="3.4" fill="#d9a05b" opacity=".85" transform="rotate(45.0 264.4 192.4)"/><ellipse cx="258.0" cy="195.0" rx="7" ry="3.4" fill="#d9a05b" opacity=".85" transform="rotate(90.0 258.0 195.0)"/><ellipse cx="251.6" cy="192.4" rx="7" ry="3.4" fill="#d9a05b" opacity=".85" transform="rotate(135.0 251.6 192.4)"/><ellipse cx="249.0" cy="186.0" rx="7" ry="3.4" fill="#d9a05b" opacity=".85" transform="rotate(180.0 249.0 186.0)"/><ellipse cx="251.6" cy="179.6" rx="7" ry="3.4" fill="#d9a05b" opacity=".85" transform="rotate(225.0 251.6 179.6)"/><ellipse cx="258.0" cy="177.0" rx="7" ry="3.4" fill="#d9a05b" opacity=".85" transform="rotate(270.0 258.0 177.0)"/><ellipse cx="264.4" cy="179.6" rx="7" ry="3.4" fill="#d9a05b" opacity=".85" transform="rotate(315.0 264.4 179.6)"/>
+  </g>
+
+  <!-- reflection on the table -->
+  <ellipse cx="200" cy="428" rx="120" ry="12" fill="#c9a35e" opacity=".08"/>
+
+  <!-- frame + placeholder note -->
+  <rect x="14" y="14" width="372" height="472" fill="none" stroke="#c9a35e" stroke-width="1" opacity=".25"/>
+  <text x="200" y="470" text-anchor="middle" font-family="Georgia, serif" font-size="11"
+        letter-spacing="4" fill="#c9a35e" opacity=".55">PLACEHOLDER PHOTO</text>
+</svg>
