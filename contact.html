@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title data-i18n="meta.contact.title">Contact — Shake&amp;Steer Cocktail Catering</title>
+  <meta name="description"
+        content="Get in touch with Shake&Steer about your wedding, party, corporate event or celebration. E-mail, phone, service area and social channels."
+        data-i18n-attr="content:meta.contact.description">
+
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap">
+
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+
+  <script src="assets/js/theme.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
+
+  <!-- ================= HEADER (same on every page) ================= -->
+  <header class="site-header">
+    <div class="site-header__inner">
+
+      <a class="brand" href="index.html">
+        <img class="brand__mark" src="assets/img/logo.svg" alt="" width="34" height="34">
+        <span>Shake<span class="brand__amp">&amp;</span>Steer</span>
+      </a>
+
+      <nav class="nav" id="primary-nav" data-nav aria-label="Main">
+        <a class="nav__link" href="index.html" data-i18n="nav.home">Home</a>
+        <a class="nav__link" href="about.html" data-i18n="nav.about">About</a>
+        <a class="nav__link" href="menu.html" data-i18n="nav.menu">Menu</a>
+        <a class="nav__link" href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+        <a class="nav__link" href="services.html" data-i18n="nav.services">Services</a>
+        <a class="nav__link" href="contact.html" aria-current="page" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="header-tools">
+        <div class="lang-switch">
+          <svg class="lang-switch__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.6" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/><path d="M3 12h18"/>
+            <ellipse cx="12" cy="12" rx="4.2" ry="9"/>
+          </svg>
+          <label class="sr-only" for="lang-select" data-i18n="nav.language">Language</label>
+          <select id="lang-select" data-lang-switch></select>
+        </div>
+
+        <button class="theme-toggle" type="button" data-theme-toggle
+                aria-label="Switch theme" data-i18n-attr="aria-label:nav.theme">
+          <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+          </svg>
+          <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.6" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/>
+          </svg>
+        </button>
+      </div>
+
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false"
+              aria-controls="primary-nav" aria-label="Menu" data-i18n-attr="aria-label:nav.menuButton">
+        <span class="nav-toggle__bars"><span></span><span></span><span></span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= PAGE HERO ================= -->
+    <section class="hero hero--page">
+      <div class="hero__bg"></div>
+      <div class="hero__grain"></div>
+      <div class="hero__frame"></div>
+
+      <div class="container hero__inner">
+        <p class="eyebrow eyebrow--center" data-i18n="contact.hero.eyebrow">Contact</p>
+        <h1 data-i18n="contact.hero.title">Let's talk about your evening</h1>
+        <p class="hero__text" data-i18n="contact.hero.text">
+          Write or call — whichever suits you. We answer every enquiry personally, usually
+          within two working days.
+        </p>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         CONTACT DETAILS
+         ┌──────────────────────────────────────────────────────────────┐
+         │  EVERYTHING MARKED [REPLACE: …] IS A PLACEHOLDER.            │
+         │  Swap the visible text AND the href="" next to it.           │
+         │  The same e-mail and phone also appear in the footer of all  │
+         │  six .html files — search for "example.com" to find them.    │
+         └──────────────────────────────────────────────────────────────┘
+         ================================================================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow eyebrow--center" data-i18n="contact.details.eyebrow">Details</p>
+          <h2 data-i18n="contact.details.title">How to reach us</h2>
+        </div>
+
+        <div class="contact-grid" data-reveal-group="90">
+
+          <!-- E-MAIL -->
+          <article class="contact-card reveal">
+            <span class="icon-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                   stroke-linejoin="round">
+                <rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7.5l8.5 6 8.5-6"/>
+              </svg>
+            </span>
+            <span class="contact-card__label" data-i18n="contact.details.emailLabel">E-mail</span>
+            <!-- REPLACE: change both the link text and the mailto: address -->
+            <a class="contact-card__value" href="mailto:hello@example.com">hello@example.com</a>
+            <span class="contact-card__note placeholder">[REPLACE: e-mail address]</span>
+            <span class="contact-card__note" data-i18n="contact.details.emailNote">
+              Best for enquiries with dates, venues and guest numbers.
+            </span>
+          </article>
+
+          <!-- PHONE -->
+          <article class="contact-card reveal">
+            <span class="icon-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                   stroke-linejoin="round">
+                <path d="M6 3h3l2 5-2.4 1.5a12.5 12.5 0 0 0 5.9 5.9L16 13l5 2v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4 5.2 2 2 0 0 1 6 3z"/>
+              </svg>
+            </span>
+            <span class="contact-card__label" data-i18n="contact.details.phoneLabel">Phone</span>
+            <!-- REPLACE: change both the link text and the tel: number -->
+            <a class="contact-card__value" href="tel:+000000000000">+00 000 000 000</a>
+            <span class="contact-card__note placeholder">[REPLACE: phone number]</span>
+            <span class="contact-card__note" data-i18n="contact.details.phoneNote">
+              Monday to Saturday, 10:00–19:00. WhatsApp on the same number.
+            </span>
+          </article>
+
+          <!-- LOCATION -->
+          <article class="contact-card reveal">
+            <span class="icon-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                   stroke-linejoin="round">
+                <path d="M12 21.5s7-6.2 7-11.3a7 7 0 1 0-14 0c0 5.1 7 11.3 7 11.3z"/>
+                <circle cx="12" cy="10" r="2.6"/>
+              </svg>
+            </span>
+            <span class="contact-card__label" data-i18n="contact.details.locationLabel">Based in</span>
+            <!-- REPLACE: your city and country -->
+            <span class="contact-card__value">City, Country</span>
+            <span class="contact-card__note placeholder">[REPLACE: city / country]</span>
+            <span class="contact-card__note" data-i18n="contact.details.locationNote">
+              Serving the whole region. Travel further afield quoted on request.
+            </span>
+          </article>
+
+          <!-- SERVICE AREA -->
+          <article class="contact-card reveal">
+            <span class="icon-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="9"/><path d="M3 12h18"/>
+                <ellipse cx="12" cy="12" rx="4.2" ry="9"/>
+              </svg>
+            </span>
+            <span class="contact-card__label" data-i18n="contact.details.areaLabel">Service area</span>
+            <!-- REPLACE: the regions or countries you cover -->
+            <span class="contact-card__value">Region / countries covered</span>
+            <span class="contact-card__note placeholder">[REPLACE: service area]</span>
+            <span class="contact-card__note" data-i18n="contact.details.areaNote">
+              Travel within this area is included in every quote.
+            </span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SOCIAL + PRACTICAL INFO
+         ================================================================= -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="split">
+
+          <div class="split__text reveal">
+            <p class="eyebrow" data-i18n="contact.social.eyebrow">Follow along</p>
+            <h2 data-i18n="contact.social.title">See what we poured last weekend</h2>
+            <p class="lead" style="margin-top:1.2rem" data-i18n="contact.social.text">
+              New menus, behind-the-bar preparation and pictures from recent events go up
+              first on social. It is also the fastest way to send us a quick question.
+            </p>
+
+            <!-- REPLACE: put your real profile URLs in every href="" below -->
+            <div class="socials" style="margin-top:2rem">
+              <a class="social" href="https://instagram.com/" target="_blank" rel="noopener"
+                 aria-label="Instagram" title="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/>
+                  <circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/>
+                </svg>
+              </a>
+              <a class="social" href="https://tiktok.com/" target="_blank" rel="noopener"
+                 aria-label="TikTok" title="TikTok">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M16.6 5.8a4.3 4.3 0 0 1-1.1-2.8h-3v12.1a2.4 2.4 0 1 1-1.7-2.3V9.7a5.5 5.5 0 1 0 4.7 5.4V9.6a7.2 7.2 0 0 0 4.2 1.35V7.9a4.3 4.3 0 0 1-3.1-2.1z"/>
+                </svg>
+              </a>
+              <a class="social" href="https://facebook.com/" target="_blank" rel="noopener"
+                 aria-label="Facebook" title="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5h1.65V3.6c-.3-.04-1.3-.1-2.5-.1-2.5 0-4.2 1.53-4.2 4.33V9.9H7.3V13H10v8z"/>
+                </svg>
+              </a>
+              <a class="social" href="https://wa.me/000000000000" target="_blank" rel="noopener"
+                 aria-label="WhatsApp" title="WhatsApp">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3zm0 2a7 7 0 1 1-3.6 13l-.3-.2-2.3.6.6-2.2-.2-.3A7 7 0 0 1 12 5zm-2.6 3.4c-.2 0-.5 0-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.7 2.7 4.2 3.7 2 .8 2.4.6 2.9.6.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.15-1.2l-.6-.3-1.5-.7c-.2-.1-.4-.1-.55.1l-.75 1c-.15.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.35.1-.45l.45-.5c.15-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.7-1.7c-.2-.45-.4-.4-.55-.4z"/>
+                </svg>
+              </a>
+              <a class="social" href="https://youtube.com/" target="_blank" rel="noopener"
+                 aria-label="YouTube" title="YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M21.6 7.2a2.5 2.5 0 0 0-1.75-1.77C18.28 5 12 5 12 5s-6.28 0-7.85.43A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.75 1.77C5.72 19 12 19 12 19s6.28 0 7.85-.43a2.5 2.5 0 0 0 1.75-1.77A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15.2V8.8l5.2 3.2z"/>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Handles, spelled out so they are easy to find and replace -->
+            <ul class="info-list" style="margin-top:2rem">
+              <li><span>Instagram</span><span class="placeholder">[REPLACE: @handle + link]</span></li>
+              <li><span>TikTok</span><span class="placeholder">[REPLACE: @handle + link]</span></li>
+              <li><span>Facebook</span><span class="placeholder">[REPLACE: page + link]</span></li>
+              <li><span>WhatsApp</span><span class="placeholder">[REPLACE: number + wa.me link]</span></li>
+              <li><span>YouTube</span><span class="placeholder">[REPLACE: channel + link]</span></li>
+            </ul>
+          </div>
+
+          <div class="split__text reveal">
+            <p class="eyebrow" data-i18n="contact.info.eyebrow">Practical</p>
+            <h2 data-i18n="contact.info.title">Before you write</h2>
+            <p class="lead" style="margin-top:1.2rem" data-i18n="contact.info.text">
+              A first message with these five things lets us send back a real proposal
+              instead of a list of questions.
+            </p>
+
+            <ul class="includes" style="margin-top:1.6rem">
+              <li data-i18n="contact.info.i1">The date, or the two or three dates you are considering</li>
+              <li data-i18n="contact.info.i2">The venue, or at least the city and the kind of space</li>
+              <li data-i18n="contact.info.i3">Roughly how many guests you expect</li>
+              <li data-i18n="contact.info.i4">What kind of event it is, and how long the bar should run</li>
+              <li data-i18n="contact.info.i5">Anything that matters to you: a favourite drink, a theme, a budget range</li>
+            </ul>
+
+            <h3 style="margin-top:2.5rem;font-size:1.3rem" data-i18n="contact.hours.title">Office hours</h3>
+            <ul class="info-list" style="margin-top:1.2rem">
+              <li><span data-i18n="contact.hours.weekdays">Monday – Friday</span><span>10:00 – 19:00</span></li>
+              <li><span data-i18n="contact.hours.saturday">Saturday</span><span>11:00 – 16:00</span></li>
+              <li><span data-i18n="contact.hours.sunday">Sunday</span><span data-i18n="contact.hours.closed">Events only</span></li>
+              <li><span data-i18n="contact.hours.response">Typical reply</span><span data-i18n="contact.hours.responseValue">Within 2 working days</span></li>
+            </ul>
+            <p style="margin-top:1rem" class="placeholder">[REPLACE: opening hours]</p>
+
+            <p style="margin-top:2rem">
+              <a class="btn btn--primary" href="mailto:hello@example.com" data-i18n="contact.info.cta">Write to us</a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         WHERE WE WORK
+         ================================================================= -->
+    <section class="section">
+      <div class="container container--narrow text-center">
+        <p class="eyebrow eyebrow--center" data-i18n="contact.area.eyebrow">Coverage</p>
+        <h2 data-i18n="contact.area.title">Where we pour</h2>
+        <p class="lead" style="margin:1.2rem auto 0" data-i18n="contact.area.text">
+          Our standard service area is listed below. Anywhere further is perfectly
+          possible — travel and accommodation are simply quoted separately and agreed
+          before anything is booked.
+        </p>
+
+        <!-- REPLACE: list your real cities / regions here -->
+        <div class="chips reveal" style="margin-top:2rem">
+          <span class="chip placeholder">[REPLACE: city 1]</span>
+          <span class="chip placeholder">[REPLACE: city 2]</span>
+          <span class="chip placeholder">[REPLACE: city 3]</span>
+          <span class="chip placeholder">[REPLACE: region]</span>
+          <span class="chip" data-i18n="contact.area.elsewhere">Elsewhere on request</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="section cta">
+      <div class="container">
+        <h2 data-i18n="contact.cta.title">One message is all it takes</h2>
+        <p data-i18n="contact.cta.text">
+          Send us the date and the place. We will tell you honestly whether we are free and
+          what we would suggest.
+        </p>
+        <div class="cta__actions">
+          <a class="btn btn--primary btn--lg" href="mailto:hello@example.com" data-i18n="contact.cta.email">Send an e-mail</a>
+          <a class="btn btn--lg" href="tel:+000000000000" data-i18n="contact.cta.call">Call us</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER (same on every page) ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+
+        <div>
+          <span class="footer-brand__name">Shake<span class="brand__amp">&amp;</span>Steer</span>
+          <p data-i18n="footer.about">
+            A travelling cocktail bar for weddings, private parties and corporate events.
+            Bespoke menus, professional bartenders, and a bar built for the room it stands in.
+          </p>
+        </div>
+
+        <div>
+          <h4 data-i18n="footer.explore">Explore</h4>
+          <ul class="footer-list">
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="menu.html" data-i18n="nav.menu">Menu</a></li>
+            <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 data-i18n="footer.services">Services</h4>
+          <ul class="footer-list">
+            <li><a href="services.html" data-i18n="services.weddings.title">Weddings</a></li>
+            <li><a href="services.html" data-i18n="services.private.title">Private parties</a></li>
+            <li><a href="services.html" data-i18n="services.corporate.title">Corporate events</a></li>
+            <li><a href="services.html" data-i18n="services.celebrations.title">Celebrations</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 data-i18n="footer.contact">Contact</h4>
+          <!-- PLACEHOLDERS — replace the e-mail and phone in every .html file -->
+          <ul class="footer-list">
+            <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+            <li><a href="tel:+000000000000">+00 000 000 000</a></li>
+          </ul>
+          <div class="socials" style="margin-top:1.2rem">
+            <a class="social" href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/>
+                <circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/>
+              </svg>
+            </a>
+            <a class="social" href="https://tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M16.6 5.8a4.3 4.3 0 0 1-1.1-2.8h-3v12.1a2.4 2.4 0 1 1-1.7-2.3V9.7a5.5 5.5 0 1 0 4.7 5.4V9.6a7.2 7.2 0 0 0 4.2 1.35V7.9a4.3 4.3 0 0 1-3.1-2.1z"/>
+              </svg>
+            </a>
+            <a class="social" href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5h1.65V3.6c-.3-.04-1.3-.1-2.5-.1-2.5 0-4.2 1.53-4.2 4.33V9.9H7.3V13H10v8z"/>
+              </svg>
+            </a>
+            <a class="social" href="https://wa.me/000000000000" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3zm0 2a7 7 0 1 1-3.6 13l-.3-.2-2.3.6.6-2.2-.2-.3A7 7 0 0 1 12 5zm-2.6 3.4c-.2 0-.5 0-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.7 2.7 4.2 3.7 2 .8 2.4.6 2.9.6.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.15-1.2l-.6-.3-1.5-.7c-.2-.1-.4-.1-.55.1l-.75 1c-.15.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.35.1-.45l.45-.5c.15-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.7-1.7c-.2-.45-.4-.4-.55-.4z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="site-footer__bottom">
+        <p>© <span data-year>2026</span> Shake&amp;Steer. <span data-i18n="footer.rights">All rights reserved.</span></p>
+        <p data-i18n="footer.responsibly">Please enjoy responsibly. 18+</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,589 @@
+/* ==========================================================================
+   Shake&Steer — layout.css
+   The furniture that repeats on every page: header, navigation, language
+   switcher, theme toggle, hero banners and the footer.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. HEADER
+   -------------------------------------------------------------------------- */
+.site-header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 100;
+  height: var(--header-h);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid transparent;
+  transition: background-color var(--t) var(--ease),
+    border-color var(--t) var(--ease), backdrop-filter var(--t) var(--ease);
+}
+
+/* main.js adds .is-stuck once the page is scrolled a little */
+.site-header.is-stuck,
+.site-header.is-open {
+  background: rgba(21, 13, 28, 0.9); /* fallback for older browsers */
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  border-bottom-color: var(--line);
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+/* -- Brand ---------------------------------------------------------------- */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-right: auto;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.brand__mark {
+  width: 34px;
+  height: 34px;
+  flex: none;
+  transition: transform var(--t-slow) var(--ease);
+}
+
+.brand:hover .brand__mark {
+  transform: rotate(-12deg);
+}
+
+.brand__amp {
+  color: var(--accent);
+  font-style: italic;
+  padding-inline: 0.06em;
+}
+
+/* -- Primary navigation --------------------------------------------------- */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 2vw, 2.1rem);
+}
+
+.nav__link {
+  position: relative;
+  padding-block: 0.35rem;
+  font-size: 0.83rem;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+  transition: color var(--t) var(--ease);
+}
+
+/* Animated gold underline */
+.nav__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--t) var(--ease);
+}
+
+.nav__link:hover,
+.nav__link[aria-current="page"] {
+  color: var(--text);
+}
+
+.nav__link:hover::after,
+.nav__link[aria-current="page"]::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.nav__link[aria-current="page"] {
+  color: var(--accent);
+}
+
+/* -- Header tools (language + theme) -------------------------------------- */
+.header-tools {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/* Language switcher: a styled native <select> so it works everywhere */
+.lang-switch {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.lang-switch__icon {
+  position: absolute;
+  left: 0.6rem;
+  width: 15px;
+  height: 15px;
+  color: var(--accent);
+  pointer-events: none;
+}
+
+.lang-switch select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding: 0.5rem 1.6rem 0.5rem 2rem;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 100px;
+  color: var(--text-soft);
+  font-size: 0.76rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: border-color var(--t) var(--ease), color var(--t) var(--ease);
+}
+
+.lang-switch select:hover {
+  border-color: var(--line-strong);
+  color: var(--text);
+}
+
+.lang-switch select option {
+  background: var(--surface-solid);
+  color: var(--text);
+}
+
+/* Little chevron on the right of the select */
+.lang-switch::after {
+  content: "";
+  position: absolute;
+  right: 0.7rem;
+  width: 6px;
+  height: 6px;
+  border-right: 1px solid var(--accent);
+  border-bottom: 1px solid var(--accent);
+  transform: translateY(-2px) rotate(45deg);
+  pointer-events: none;
+}
+
+/* Theme toggle */
+.theme-toggle {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--text-soft);
+  transition: border-color var(--t) var(--ease), color var(--t) var(--ease),
+    transform var(--t) var(--ease);
+}
+
+.theme-toggle:hover {
+  border-color: var(--line-strong);
+  color: var(--accent);
+  transform: rotate(25deg);
+}
+
+.theme-toggle svg {
+  width: 17px;
+  height: 17px;
+}
+
+/* Show sun in dark mode (click = go light), moon in light mode */
+.theme-toggle__sun {
+  display: block;
+}
+.theme-toggle__moon {
+  display: none;
+}
+[data-theme="light"] .theme-toggle__sun {
+  display: none;
+}
+[data-theme="light"] .theme-toggle__moon {
+  display: block;
+}
+
+/* -- Mobile menu button --------------------------------------------------- */
+.nav-toggle {
+  display: none;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+}
+
+.nav-toggle__bars {
+  position: relative;
+  width: 16px;
+  height: 10px;
+}
+
+.nav-toggle__bars span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--text);
+  transition: transform var(--t) var(--ease), opacity var(--t-fast) var(--ease);
+}
+
+.nav-toggle__bars span:nth-child(1) {
+  top: 0;
+}
+.nav-toggle__bars span:nth-child(2) {
+  top: 50%;
+}
+.nav-toggle__bars span:nth-child(3) {
+  top: 100%;
+}
+
+.site-header.is-open .nav-toggle__bars span:nth-child(1) {
+  transform: translateY(5px) rotate(45deg);
+}
+.site-header.is-open .nav-toggle__bars span:nth-child(2) {
+  opacity: 0;
+}
+.site-header.is-open .nav-toggle__bars span:nth-child(3) {
+  transform: translateY(-5px) rotate(-45deg);
+}
+
+/* -- Mobile layout -------------------------------------------------------- */
+@media (max-width: 900px) {
+  .nav-toggle {
+    display: grid;
+    order: 3;
+  }
+
+  .header-tools {
+    order: 2;
+  }
+
+  /* The nav becomes a full-width drawer sliding down from the header */
+  .nav {
+    position: fixed;
+    inset: var(--header-h) 0 auto 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 1rem var(--gutter) 2.25rem;
+    background: rgba(21, 13, 28, 0.97); /* fallback for older browsers */
+    background: color-mix(in srgb, var(--bg) 96%, transparent);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--line);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-12px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--t) var(--ease), transform var(--t) var(--ease),
+      visibility var(--t);
+  }
+
+  .site-header.is-open .nav {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
+  .nav__link {
+    padding-block: 1rem;
+    border-bottom: 1px solid var(--line);
+    font-size: 0.95rem;
+    letter-spacing: 0.2em;
+  }
+
+  .nav__link::after {
+    display: none;
+  }
+
+  .lang-switch select {
+    padding-right: 1.4rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .brand {
+    font-size: 1.2rem;
+  }
+  .lang-switch select {
+    padding-left: 1.7rem;
+    font-size: 0.7rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. HERO — the big banner at the top of every page
+   -------------------------------------------------------------------------- */
+.hero {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 100vh; /* fallback */
+  min-height: 100svh; /* avoids the mobile URL-bar jump */
+  padding-top: var(--header-h);
+  text-align: center;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* Shorter hero used on the inner pages */
+.hero--page {
+  min-height: clamp(420px, 62vh, 620px);
+}
+
+/* Layered purple/burgundy glow behind the hero */
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background:
+    radial-gradient(70% 55% at 18% 12%, rgba(124, 63, 163, 0.5), transparent 62%),
+    radial-gradient(62% 58% at 84% 78%, rgba(142, 28, 63, 0.48), transparent 64%),
+    radial-gradient(90% 80% at 50% 120%, rgba(201, 163, 94, 0.16), transparent 70%),
+    var(--bg);
+}
+
+[data-theme="light"] .hero__bg {
+  background:
+    radial-gradient(70% 55% at 18% 12%, rgba(124, 63, 163, 0.22), transparent 62%),
+    radial-gradient(62% 58% at 84% 78%, rgba(142, 28, 63, 0.2), transparent 64%),
+    radial-gradient(90% 80% at 50% 120%, rgba(201, 163, 94, 0.28), transparent 70%),
+    var(--bg);
+}
+
+/* Slowly drifting light, gives the page a live feel */
+.hero__bg::after {
+  content: "";
+  position: absolute;
+  inset: -25%;
+  background: radial-gradient(
+    38% 38% at 50% 50%,
+    rgba(201, 163, 94, 0.14),
+    transparent 70%
+  );
+  animation: drift 22s var(--ease) infinite alternate;
+}
+
+@keyframes drift {
+  from {
+    transform: translate3d(-14%, -8%, 0) scale(1);
+  }
+  to {
+    transform: translate3d(16%, 10%, 0) scale(1.22);
+  }
+}
+
+/* Fine grain so the gradients never look flat/banded */
+.hero__grain {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.35;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
+}
+
+.hero__inner {
+  position: relative;
+  padding-block: clamp(4rem, 12vh, 8rem);
+}
+
+.hero__title {
+  font-size: var(--fs-hero);
+  font-weight: 300;
+  line-height: 0.95;
+  letter-spacing: 0.01em;
+}
+
+.hero__title .brand__amp {
+  font-size: 0.78em;
+}
+
+.hero__tagline {
+  margin-top: 1.4rem;
+  color: var(--accent-soft);
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2.4vw, 1.6rem);
+  font-style: italic;
+  letter-spacing: 0.06em;
+}
+
+.hero__text {
+  max-width: 56ch;
+  margin: 1.8rem auto 0;
+  color: var(--text-soft);
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2.6rem;
+}
+
+/* Thin gold frame inset from the hero edges */
+.hero__frame {
+  position: absolute;
+  inset: clamp(0.9rem, 2.2vw, 2rem);
+  border: 1px solid var(--line);
+  pointer-events: none;
+}
+
+.hero__frame::before,
+.hero__frame::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--accent);
+  opacity: 0.75;
+}
+
+.hero__frame::before {
+  top: -1px;
+  left: -1px;
+  border-width: 1px 0 0 1px;
+}
+
+.hero__frame::after {
+  right: -1px;
+  bottom: -1px;
+  border-width: 0 1px 1px 0;
+}
+
+/* Scroll cue at the bottom of the home hero */
+.hero__scroll {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(1.75rem, 4vh, 3rem);
+  translate: -50% 0;
+  display: grid;
+  justify-items: center;
+  gap: 0.7rem;
+  color: var(--text-muted);
+  font-size: 0.66rem;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+}
+
+.hero__scroll span::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 46px;
+  margin: 0.7rem auto 0;
+  background: linear-gradient(var(--accent), transparent);
+  animation: scrollCue 2.4s var(--ease) infinite;
+  transform-origin: top;
+}
+
+@keyframes scrollCue {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 0;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. FOOTER
+   -------------------------------------------------------------------------- */
+.site-footer {
+  position: relative;
+  padding-top: clamp(3.5rem, 7vw, 5.5rem);
+  background: var(--bg-alt);
+  border-top: 1px solid var(--line);
+}
+
+.site-footer__grid {
+  display: grid;
+  gap: clamp(2rem, 5vw, 3.5rem);
+  grid-template-columns: 1fr;
+  padding-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+@media (min-width: 700px) {
+  .site-footer__grid {
+    grid-template-columns: 1.6fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .site-footer__grid {
+    grid-template-columns: 1.8fr 1fr 1fr 1.2fr;
+  }
+}
+
+.site-footer h4 {
+  margin-bottom: 1.1rem;
+  color: var(--accent);
+  font-family: var(--font-body);
+  font-size: var(--fs-eyebrow);
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.site-footer p {
+  color: var(--text-muted);
+  font-size: 0.94rem;
+}
+
+.footer-brand__name {
+  display: inline-flex;
+  align-items: baseline;
+  margin-bottom: 0.9rem;
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  letter-spacing: 0.04em;
+}
+
+.footer-list li + li {
+  margin-top: 0.6rem;
+}
+
+.footer-list a {
+  color: var(--text-soft);
+  font-size: 0.94rem;
+  transition: color var(--t) var(--ease), padding-left var(--t) var(--ease);
+}
+
+.footer-list a:hover {
+  color: var(--accent);
+  padding-left: 5px;
+}
+
+.site-footer__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1.5rem;
+  border-top: 1px solid var(--line);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.site-footer__bottom p {
+  font-size: inherit;
+}

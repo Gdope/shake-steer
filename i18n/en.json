@@ -1,0 +1,493 @@
+{
+  "meta": {
+    "home": {
+      "title": "Shake&Steer — Premium Cocktail Catering",
+      "description": "Shake&Steer is a travelling cocktail bar for weddings, private parties and corporate events. Bespoke menus, professional bartenders, a bar that looks as good as it pours."
+    },
+    "about": {
+      "title": "About — Shake&Steer Cocktail Catering",
+      "description": "The story behind Shake&Steer: a mobile cocktail bar built on good ingredients, quiet service and menus written for one evening only."
+    },
+    "menu": {
+      "title": "Menu — Shake&Steer Cocktail Catering",
+      "description": "Ten signature Shake&Steer cocktails, plus a downloadable PDF with the full list of around seventy drinks, descriptions and ingredients."
+    },
+    "gallery": {
+      "title": "Gallery — Shake&Steer Cocktail Catering",
+      "description": "Photographs from Shake&Steer bars at weddings, private parties, corporate evenings and family celebrations."
+    },
+    "services": {
+      "title": "Services & Packages — Shake&Steer",
+      "description": "Cocktail catering for weddings, private parties, corporate events, birthdays and family celebrations. Three packages, every quote written for the event."
+    },
+    "contact": {
+      "title": "Contact — Shake&Steer Cocktail Catering",
+      "description": "Get in touch with Shake&Steer about your wedding, party, corporate event or celebration. E-mail, phone, service area and social channels."
+    }
+  },
+
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "menu": "Menu",
+    "gallery": "Gallery",
+    "services": "Services",
+    "contact": "Contact",
+    "language": "Language",
+    "theme": "Switch theme",
+    "menuButton": "Menu",
+    "skip": "Skip to content"
+  },
+
+  "home": {
+    "hero": {
+      "eyebrow": "Mobile cocktail bar & event catering",
+      "tagline": "Craft cocktails, poured where you celebrate.",
+      "text": "A travelling cocktail bar for weddings, private parties and corporate evenings. Bespoke menus, seasoned bartenders and a bar that looks as good as it pours.",
+      "ctaMenu": "Explore the menu",
+      "ctaBook": "Plan your event",
+      "scroll": "Scroll"
+    },
+    "intro": {
+      "eyebrow": "Who we are",
+      "title": "A bar that arrives, and an evening that stays with people",
+      "text1": "Shake&Steer builds a complete cocktail bar inside your venue — the counter, the glassware, the ice, the garnishes and the people behind it. Everything is prepared in our own workshop and assembled on site hours before your first guest arrives.",
+      "text2": "We work with a short, seasonal list of house creations and a long book of classics, so every menu we write feels like it belongs to that one evening and to nobody else.",
+      "link": "Read our story",
+      "plate": "Our mobile bar",
+      "imageAlt": "Placeholder photo of a Shake&Steer bar set-up"
+    },
+    "stats": {
+      "events": "Events served",
+      "cocktails": "Cocktails on the list",
+      "guests": "Guests behind the bar",
+      "years": "Years of practice"
+    },
+    "events": {
+      "eyebrow": "What we do",
+      "title": "Occasions we pour for",
+      "text": "Five kinds of evening, one standard. Every format below can be scaled from twenty guests in a living room to five hundred under a marquee.",
+      "moreTitle": "Something else in mind?",
+      "moreText": "Product launches, film wraps, gallery openings, private tastings. If there are people and a reason, we can build a bar for it.",
+      "moreLink": "See all services"
+    },
+    "signature": {
+      "eyebrow": "From the list",
+      "title": "Four of our signatures",
+      "text": "Ten house creations sit alongside roughly seventy classics. Here are four that tend to disappear first.",
+      "link": "See the full menu"
+    },
+    "process": {
+      "eyebrow": "How it works",
+      "title": "Four steps from first message to last pour",
+      "s1": {
+        "title": "Talk it through",
+        "text": "Tell us the date, the place and roughly how many people. We reply with availability and a few honest questions."
+      },
+      "s2": {
+        "title": "Design the menu",
+        "text": "We propose a menu built around your taste and your venue, including alcohol-free serves that nobody feels short-changed by."
+      },
+      "s3": {
+        "title": "We set up",
+        "text": "The bar, ice, glassware, garnishes and team arrive early, install quietly and leave the space exactly as we found it."
+      },
+      "s4": {
+        "title": "You celebrate",
+        "text": "You spend the evening with your guests. We take care of everything on the other side of the counter."
+      }
+    },
+    "quote": {
+      "text": "They turned a corner of an old stone courtyard into the best bar in the city for one night. Half our guests are still asking for the recipe.",
+      "role": "— wedding, September"
+    }
+  },
+
+  "about": {
+    "hero": {
+      "eyebrow": "Our story",
+      "title": "Nine years of building bars in other people's rooms",
+      "text": "Shake&Steer began with one flight case, two bartenders and a stubborn idea: that a cocktail served at a private party should be every bit as good as one served in a great bar."
+    },
+    "story": {
+      "eyebrow": "How it started",
+      "title": "One flight case, one wedding, no plan B",
+      "text1": "The first event was a friend's wedding in a courtyard with no running water and a single power socket. We built a bar out of borrowed crates, carried ice up two flights of stairs and served two hundred and forty drinks.",
+      "text2": "Nothing about that night was easy, and everything about it was worth repeating. Since then the flight cases have multiplied, the bar has become a modular counter we designed ourselves, and the team has grown — but the working method has not changed. We turn up early, we prepare everything by hand, and we treat somebody's one important evening as exactly that.",
+      "text3": "Today we pour at weddings in vineyards, birthdays in flats, product launches in galleries and christenings in family houses. The scale changes. The standard does not.",
+      "plate": "The first season",
+      "imageAlt": "Placeholder photo from an early Shake&Steer event"
+    },
+    "values": {
+      "eyebrow": "What makes us different",
+      "title": "Four things we refuse to compromise on",
+      "v1": {
+        "title": "Everything made from scratch",
+        "text": "Syrups, cordials, shrubs and infusions are produced in our own workshop in small batches, dated and tasted before they leave. No bottled sour mix has ever been on one of our trucks."
+      },
+      "v2": {
+        "title": "Ice treated as an ingredient",
+        "text": "We cut our own clear blocks: large cubes for spirit-forward drinks, crushed for juleps, collins spears for highballs. Cold, slow dilution is half the reason a drink still tastes right at the bottom of the glass."
+      },
+      "v3": {
+        "title": "A bar designed for the room",
+        "text": "Our counters are modular, and the front is dressed to suit the venue — oak, brushed brass, marble or draped linen. The bar should look like it was always meant to be there."
+      },
+      "v4": {
+        "title": "Service you notice only when you need it",
+        "text": "Our bartenders are trained to read a room: quick and quiet during speeches, generous and warm on the dance floor, and never the loudest thing in the photographs."
+      }
+    },
+    "craft": {
+      "eyebrow": "The experience",
+      "title": "What your guests actually feel",
+      "text1": "A guest walks up to the bar and finds a short, legible menu — four or five drinks chosen for that evening, printed on good paper, with an alcohol-free option that reads as an equal, not an apology.",
+      "text2": "They are greeted by name if we know it, served in under ninety seconds, and handed a glass that is properly cold, properly balanced and beautiful enough to photograph. Then they go back to the party, which is the entire point.",
+      "link": "Look at the menu",
+      "plate": "Behind the counter",
+      "imageAlt": "Placeholder photo of a cocktail being finished at the bar"
+    },
+    "team": {
+      "eyebrow": "The people",
+      "title": "A small core, and a bench we trust",
+      "text1": "Every event is led by one of our senior bartenders, who is on site from the first crate to the last box. Around them we build a team sized to your guest list — typically one bartender for every fifty guests, plus a barback and a runner for larger evenings.",
+      "text2": "Everybody who works a Shake&Steer bar has spent time in a real one. They arrive in uniform, they carry their own tools, and they know that the difference between a good evening and a great one is usually measured in small courtesies.",
+      "plate": "The team",
+      "imageAlt": "Placeholder photo of the Shake&Steer team"
+    },
+    "quote": {
+      "text": "We had planned a party and they delivered an evening. Three months later people are still talking about the drinks rather than the seating plan.",
+      "role": "— anniversary dinner"
+    }
+  },
+
+  "menu": {
+    "hero": {
+      "eyebrow": "The drinks",
+      "title": "Ten signatures, seventy ways to say yes",
+      "text": "These ten are the house creations we are known for. Behind them sits a full book of classics, spritzes, tiki serves and alcohol-free drinks — all of it in the PDF at the bottom of this page."
+    },
+    "signature": {
+      "eyebrow": "Signature creations",
+      "title": "The house list",
+      "text": "Rewritten twice a year around what is in season. Every one of them can be batched for large events without losing a thing."
+    },
+    "tags": {
+      "whisky": "Whisky",
+      "gin": "Gin",
+      "vodka": "Vodka",
+      "rum": "Rum",
+      "tequila": "Tequila",
+      "mezcal": "Mezcal",
+      "champagne": "Champagne",
+      "zeroproof": "Alcohol-free"
+    },
+    "c1": {
+      "desc": "Aged whisky softened with fig and vanilla, finished with a whisper of cherrywood smoke released at the table.",
+      "alt": "Velvet Sovereign cocktail placeholder"
+    },
+    "c2": {
+      "desc": "Gin stirred down with plum liqueur and golden chamomile, bright as a late-afternoon sun and twice as easy to finish.",
+      "alt": "Gilded Plum cocktail placeholder"
+    },
+    "c3": {
+      "desc": "Smoked mezcal, rose and pink grapefruit over a long block of clear ice — floral at the front, quietly smoky at the end.",
+      "alt": "Rosé Noir cocktail placeholder"
+    },
+    "c4": {
+      "desc": "Coastal gin, sea-salt tonic and a cordial of green olive and rosemary. Clean, saline and impossible to drink slowly in August.",
+      "alt": "Adriatic Mist cocktail placeholder"
+    },
+    "c5": {
+      "desc": "Blackcurrant and burnt orange under a slow pour of champagne, served in a chilled flute with a single gold leaf.",
+      "alt": "Bordeaux Ember cocktail placeholder"
+    },
+    "c6": {
+      "desc": "Vodka washed with violet and blackberry, lengthened with sparkling wine and served the colour of the sky ten minutes after sunset.",
+      "alt": "The Violet Hour cocktail placeholder"
+    },
+    "c7": {
+      "desc": "Cucumber, green apple and lovage with a verjus cordial and soda. Every bit as considered as the drinks with spirits in them.",
+      "alt": "Garden Room cocktail placeholder"
+    },
+    "c8": {
+      "desc": "Dark rum, roasted pineapple and star anise, poured tall over crushed ice with a cinnamon-sugar rim.",
+      "alt": "Amber & Anise cocktail placeholder"
+    },
+    "c9": {
+      "desc": "Blanco tequila with blue butterfly pea, lime and a salted honey cordial that shifts colour as it dilutes.",
+      "alt": "Midnight Harbour cocktail placeholder"
+    },
+    "c10": {
+      "desc": "Elderflower, white peach and champagne with a sugar cube soaked in bitters — our welcome drink of choice for weddings.",
+      "alt": "Fête Royale cocktail placeholder"
+    },
+    "full": {
+      "eyebrow": "The full book",
+      "title": "Around seventy drinks, in seven chapters",
+      "text": "Your final menu is usually five to eight drinks chosen from this book. The complete list, with descriptions and ingredients, is in the PDF below."
+    },
+    "cat": {
+      "signature": "Signature creations",
+      "classics": "Classics, reimagined",
+      "sparkling": "Sparkling & champagne",
+      "aperitivo": "Aperitivo & spritz",
+      "tropical": "Tropical & tiki",
+      "zeroproof": "Alcohol-free",
+      "digestif": "After dinner"
+    },
+    "download": {
+      "eyebrow": "Full menu",
+      "title": "Take the whole list with you",
+      "text": "Around seventy cocktails with a description and full ingredients for each one, laid out to print cleanly on A4.",
+      "button": "Download full menu (PDF)",
+      "en": "English PDF",
+      "sr": "Serbian PDF",
+      "hint": "The main button follows the language you picked in the header: Serbian for SR, English for everything else."
+    },
+    "cta": {
+      "title": "Want a menu written for your evening?",
+      "text": "Send us the date, the venue and the kind of night you have in mind. We will come back with a menu draft you can actually picture in your guests' hands.",
+      "link": "See the menu"
+    }
+  },
+
+  "gallery": {
+    "hero": {
+      "eyebrow": "Gallery",
+      "title": "Evenings we have poured",
+      "text": "Bars built in courtyards, ballrooms, vineyards and living rooms. Click any picture to see it larger."
+    },
+    "note": "All photographs on this page are placeholders. Replace the files in /assets/img/ with your own and keep the same file names.",
+    "lightbox": {
+      "label": "Photo viewer",
+      "close": "Close",
+      "prev": "Previous",
+      "next": "Next"
+    },
+    "i1": { "caption": "Courtyard wedding, late summer", "alt": "Placeholder photo of a courtyard wedding bar" },
+    "i2": { "caption": "Festoon lights over the terrace", "alt": "Placeholder photo of a terrace party" },
+    "i3": { "caption": "A toast, thirty seconds before the speeches", "alt": "Placeholder photo of guests raising glasses" },
+    "i4": { "caption": "Tools laid out before service", "alt": "Placeholder photo of bar tools before service" },
+    "i5": { "caption": "The counter, dressed in oak and brass", "alt": "Placeholder photo of the bar counter" },
+    "i6": { "caption": "Welcome pour, corporate launch", "alt": "Placeholder photo of a welcome drink at a launch" },
+    "i7": { "caption": "Garnish station, mid-service", "alt": "Placeholder photo of the garnish station" },
+    "i8": { "caption": "Vineyard reception at golden hour", "alt": "Placeholder photo of a vineyard reception" },
+    "i9": { "caption": "Clear ice, cut the morning of the event", "alt": "Placeholder photo of hand-cut clear ice" },
+    "i10": { "caption": "Christening lunch, alcohol-free menu", "alt": "Placeholder photo of a family celebration" },
+    "i11": { "caption": "Last orders, half past two", "alt": "Placeholder photo of the bar late at night" },
+    "i12": { "caption": "Birthday party, eighty guests", "alt": "Placeholder photo of a birthday party bar" }
+  },
+
+  "services": {
+    "hero": {
+      "eyebrow": "Services & packages",
+      "title": "A bar built around the evening you are planning",
+      "text": "Five kinds of event, three packages and a quote written for your date, your venue and your guest list. No fixed price list, because no two evenings are the same."
+    },
+    "types": {
+      "eyebrow": "What we cater",
+      "title": "Five kinds of evening",
+      "text": "Each one has its own rhythm. The list under every card is what a typical booking of that type includes."
+    },
+    "weddings": {
+      "title": "Weddings",
+      "short": "A signature couple's cocktail, a welcome pour for the aperitif hour and a bar that keeps the floor busy until the last song.",
+      "long": "From the welcome pour as guests arrive to the last round after the band packs up. We coordinate directly with your planner, caterer and venue so the bar never becomes one more thing for you to manage.",
+      "i1": "A signature cocktail created for the couple",
+      "i2": "Welcome drinks and champagne service for toasts",
+      "i3": "Printed menus matched to your stationery",
+      "i4": "Site visit and timeline planning with your venue"
+    },
+    "private": {
+      "title": "Private parties",
+      "short": "Rooftops, villas, gardens and apartments. We bring the bar, the ice and the music-friendly volume of service a good party needs.",
+      "long": "House parties, rooftops, villas and garden evenings. A compact bar that fits through a normal doorway, a menu of four or five drinks, and a team that knows when to pour quickly and when to slow down.",
+      "i1": "Compact modular bar for tight spaces",
+      "i2": "Menu tailored to the host's taste",
+      "i3": "Glassware, ice and garnishes included",
+      "i4": "Full clean-down before we leave"
+    },
+    "corporate": {
+      "title": "Corporate events",
+      "short": "Launches, conferences and client evenings — branded serves, fast queues and an invoice your finance team will accept without a sigh.",
+      "long": "Launches, conferences, staff parties and client evenings. We plan for peak demand — the fifteen minutes after a keynote ends — so nobody spends the networking hour in a queue.",
+      "i1": "Branded serves, garnishes and menu cards",
+      "i2": "Throughput planning for large arrivals",
+      "i3": "Alcohol-free menu of equal standard",
+      "i4": "Company invoice, insurance and licences in order"
+    },
+    "birthdays": {
+      "title": "Birthdays",
+      "short": "From a milestone dinner for twelve to a warehouse party for two hundred, built around the drinks the guest of honour actually likes.",
+      "long": "Milestone dinners, surprise parties and long nights in rented spaces. We build the list around what the guest of honour actually drinks, and keep one surprise back for the moment the cake arrives.",
+      "i1": "Menu built around the guest of honour",
+      "i2": "A birthday serve presented at the table",
+      "i3": "Flexible hours if the night runs long",
+      "i4": "Soft drinks and mocktails for every age"
+    },
+    "celebrations": {
+      "title": "Celebrations",
+      "short": "Christenings, anniversaries, engagements and homecomings — including gentle, alcohol-free menus for family gatherings.",
+      "long": "Christenings, anniversaries, engagements, graduations and homecomings — daytime events with mixed ages, where the alcohol-free half of the menu matters just as much as the rest.",
+      "i1": "Full alcohol-free menu, not an afterthought",
+      "i2": "Daytime service and family-friendly pacing",
+      "i3": "Quiet set-up around a ceremony or service",
+      "i4": "Smaller bar footprint for family homes"
+    },
+    "other": {
+      "title": "Something else",
+      "long": "Gallery openings, film wraps, product launches, private tastings, cocktail masterclasses for a team. If there are people and a reason to raise a glass, we can build a bar for it.",
+      "i1": "Guided tastings and masterclasses",
+      "i2": "Bar takeovers and pop-ups",
+      "i3": "Bottled cocktails for gifting",
+      "i4": "Multi-day festivals and residencies"
+    },
+    "packages": {
+      "eyebrow": "Packages",
+      "title": "Three starting points",
+      "text": "Think of these as a shape rather than a fixed offer. Every quote is written for your guest count, venue and hours — tell us what you need and we will adapt.",
+      "price": "Price on request",
+      "note": "Quoted per event",
+      "cta": "Request a quote",
+      "footnote": "Travel outside our standard service area, extra hours, additional bars and special licences are quoted separately and always agreed in advance.",
+      "p1": {
+        "name": "Essential",
+        "tagline": "Intimate gatherings, up to about 50 guests",
+        "i1": "Modular bar, set up and taken down by us",
+        "i2": "Menu of four cocktails, one alcohol-free",
+        "i3": "Two professional bartenders",
+        "i4": "Glassware, ice and garnishes",
+        "i5": "Four hours of service"
+      },
+      "p2": {
+        "badge": "Most chosen",
+        "name": "Premium",
+        "tagline": "Weddings and parties of roughly 50–150 guests",
+        "i1": "Everything in Essential",
+        "i2": "Menu of six cocktails, two alcohol-free",
+        "i3": "One signature drink designed for you",
+        "i4": "Three bartenders plus a barback",
+        "i5": "Hand-cut clear ice and printed menus",
+        "i6": "Six hours of service, welcome pour included"
+      },
+      "p3": {
+        "name": "Signature",
+        "tagline": "Large celebrations and multi-bar events",
+        "i1": "Everything in Premium",
+        "i2": "Two or more bars across the venue",
+        "i3": "Bespoke menu with three house creations",
+        "i4": "Champagne and wine service alongside the bar",
+        "i5": "Bar front dressed to your styling",
+        "i6": "Open hours, plus a late-night service"
+      }
+    },
+    "addons": {
+      "eyebrow": "Add to any package",
+      "title": "Extras worth considering",
+      "a1": {
+        "title": "Welcome tray service",
+        "text": "Drinks carried to guests on trays as they arrive, so nobody has to find the bar before they have found their seat."
+      },
+      "a2": {
+        "title": "Cocktail masterclass",
+        "text": "A 45-minute guided session for up to twenty guests — three drinks made, tasted and taken apart."
+      },
+      "a3": {
+        "title": "Bottled gifts",
+        "text": "Your signature cocktail bottled, labelled and sealed as a favour for guests to take home."
+      },
+      "a4": {
+        "title": "Late-night service",
+        "text": "A short, strong list for the last two hours: espresso serves, digestifs and one very cold beer."
+      }
+    },
+    "faq": {
+      "eyebrow": "Good to know",
+      "title": "Questions we are asked most",
+      "q1": "How far in advance should we book?",
+      "a1": "For weddings in high season, six to twelve months is comfortable. Smaller parties are often possible with a few weeks' notice — always ask, because cancellations happen.",
+      "q2": "Do you supply the alcohol?",
+      "a2": "Usually yes, and it is included in the quote. If your venue requires you to supply the drink yourself, we are happy to work as a dry-hire bar instead.",
+      "q3": "What do you need from the venue?",
+      "a3": "A level space of roughly three by two metres, one standard power socket and access for loading. No running water needed — we bring our own.",
+      "q4": "How many guests can you serve?",
+      "a4": "We plan one bartender for every fifty guests. Above three hundred we normally suggest a second bar rather than a longer queue.",
+      "q5": "Do you travel?",
+      "a5": "Yes. Travel within our standard service area is included; anything further is quoted openly, including accommodation where an early set-up requires it."
+    }
+  },
+
+  "contact": {
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Let's talk about your evening",
+      "text": "Write or call — whichever suits you. We answer every enquiry personally, usually within two working days."
+    },
+    "details": {
+      "eyebrow": "Details",
+      "title": "How to reach us",
+      "emailLabel": "E-mail",
+      "emailNote": "Best for enquiries with dates, venues and guest numbers.",
+      "phoneLabel": "Phone",
+      "phoneNote": "Monday to Saturday, 10:00–19:00. WhatsApp on the same number.",
+      "locationLabel": "Based in",
+      "locationNote": "Serving the whole region. Travel further afield quoted on request.",
+      "areaLabel": "Service area",
+      "areaNote": "Travel within this area is included in every quote."
+    },
+    "social": {
+      "eyebrow": "Follow along",
+      "title": "See what we poured last weekend",
+      "text": "New menus, behind-the-bar preparation and pictures from recent events go up first on social. It is also the fastest way to send us a quick question."
+    },
+    "info": {
+      "eyebrow": "Practical",
+      "title": "Before you write",
+      "text": "A first message with these five things lets us send back a real proposal instead of a list of questions.",
+      "i1": "The date, or the two or three dates you are considering",
+      "i2": "The venue, or at least the city and the kind of space",
+      "i3": "Roughly how many guests you expect",
+      "i4": "What kind of event it is, and how long the bar should run",
+      "i5": "Anything that matters to you: a favourite drink, a theme, a budget range",
+      "cta": "Write to us"
+    },
+    "hours": {
+      "title": "Office hours",
+      "weekdays": "Monday – Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday",
+      "closed": "Events only",
+      "response": "Typical reply",
+      "responseValue": "Within 2 working days"
+    },
+    "area": {
+      "eyebrow": "Coverage",
+      "title": "Where we pour",
+      "text": "Our standard service area is listed below. Anywhere further is perfectly possible — travel and accommodation are simply quoted separately and agreed before anything is booked.",
+      "elsewhere": "Elsewhere on request"
+    },
+    "cta": {
+      "title": "One message is all it takes",
+      "text": "Send us the date and the place. We will tell you honestly whether we are free and what we would suggest.",
+      "email": "Send an e-mail",
+      "call": "Call us"
+    }
+  },
+
+  "cta": {
+    "title": "Tell us about your evening",
+    "text": "Dates go quickly in high season. Send us the details and we will come back with a proposal and a quote — usually within two working days.",
+    "primary": "Get in touch",
+    "secondary": "View packages"
+  },
+
+  "footer": {
+    "about": "A travelling cocktail bar for weddings, private parties and corporate events. Bespoke menus, professional bartenders, and a bar built for the room it stands in.",
+    "explore": "Explore",
+    "services": "Services",
+    "contact": "Contact",
+    "rights": "All rights reserved.",
+    "responsibly": "Please enjoy responsibly. 18+"
+  }
+}

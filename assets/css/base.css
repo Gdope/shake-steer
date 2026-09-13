@@ -1,0 +1,392 @@
+/* ==========================================================================
+   Shake&Steer — base.css
+   Design tokens, colour themes, reset and typography.
+
+   EDITING TIP: almost every colour, font and spacing value on the site comes
+   from the CSS custom properties (the "--name: value" lines) below.
+   Change them here and the whole site follows.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. DESIGN TOKENS — DARK THEME (the site default)
+   -------------------------------------------------------------------------- */
+:root {
+  /* -- Brand colours ------------------------------------------------------ */
+  --plum-900: #150d1c; /* deepest purple, page background        */
+  --plum-800: #1d1226; /* raised surfaces (cards, header)        */
+  --plum-700: #271633; /* borders / hover surfaces               */
+  --plum-500: #5b2a7a; /* vivid purple accent                    */
+  --plum-400: #7c3fa3; /* lighter purple, used in gradients      */
+
+  --bordo-700: #4d0f22; /* deep burgundy                          */
+  --bordo-600: #6b1430; /* burgundy accent                        */
+  --bordo-500: #8e1c3f; /* brighter burgundy, hovers              */
+
+  --gold-500: #c9a35e; /* primary gold                           */
+  --gold-400: #d9bd85; /* hover gold                             */
+  --gold-200: #f0e2c4; /* champagne highlight                    */
+
+  /* -- Semantic colours --------------------------------------------------- */
+  --bg: var(--plum-900);
+  --bg-alt: #100a16; /* alternating band background            */
+  --surface: rgba(255, 255, 255, 0.035); /* glassy card fill      */
+  --surface-solid: var(--plum-800);
+  --text: #ede8f2;
+  --text-soft: #c3b9cd;
+  --text-muted: #9287a0;
+  --accent: var(--gold-500);
+  --accent-soft: var(--gold-200);
+  --line: rgba(201, 163, 94, 0.18); /* hairline borders           */
+  --line-strong: rgba(201, 163, 94, 0.38);
+  --shadow-lg: 0 30px 70px -30px rgba(0, 0, 0, 0.85);
+  --shadow-md: 0 16px 40px -22px rgba(0, 0, 0, 0.8);
+
+  /* Decorative gradients */
+  --grad-brand: linear-gradient(135deg, var(--plum-500) 0%, var(--bordo-600) 100%);
+  --grad-gold: linear-gradient(100deg, var(--gold-500), var(--gold-200), var(--gold-500));
+  --grad-fade: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.55));
+
+  /* -- Typography --------------------------------------------------------- */
+  /* Serif for headings, sans for body. The CJK fallbacks keep the Chinese
+     translation looking correct without loading extra font files.           */
+  --font-display: "Cormorant Garamond", "Noto Serif SC", "Songti SC", "SimSun",
+    Georgia, "Times New Roman", serif;
+  --font-body: "Jost", "PingFang SC", "Microsoft YaHei", "Noto Sans SC",
+    system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --fs-hero: clamp(3rem, 11vw, 7.5rem);
+  --fs-h1: clamp(2.4rem, 6vw, 4.2rem);
+  --fs-h2: clamp(1.9rem, 4.2vw, 3.1rem);
+  --fs-h3: clamp(1.3rem, 2.4vw, 1.75rem);
+  --fs-body: clamp(1rem, 0.96rem + 0.2vw, 1.075rem);
+  --fs-small: 0.875rem;
+  --fs-eyebrow: 0.72rem;
+
+  /* -- Layout ------------------------------------------------------------- */
+  --container: 1240px;
+  --container-narrow: 860px;
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+  --section-y: clamp(4.5rem, 10vw, 9rem);
+  --radius-sm: 6px;
+  --radius: 14px;
+  --radius-lg: 22px;
+  --header-h: 78px;
+
+  /* -- Motion ------------------------------------------------------------- */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-out-back: cubic-bezier(0.34, 1.3, 0.64, 1);
+  --t-fast: 180ms;
+  --t: 320ms;
+  --t-slow: 640ms;
+
+  color-scheme: dark;
+}
+
+/* --------------------------------------------------------------------------
+   2. LIGHT THEME — applied when <html data-theme="light">
+   -------------------------------------------------------------------------- */
+[data-theme="light"] {
+  --bg: #f8f4ef; /* warm ivory */
+  --bg-alt: #f1e9e2;
+  --surface: rgba(255, 255, 255, 0.75);
+  --surface-solid: #ffffff;
+  --text: #23151f;
+  --text-soft: #4c3b47;
+  --text-muted: #7a6a76;
+
+  --accent: #8a6320; /* darker gold keeps AA contrast on ivory */
+  --accent-soft: #6b1430;
+  --line: rgba(107, 20, 48, 0.16);
+  --line-strong: rgba(107, 20, 48, 0.34);
+  --shadow-lg: 0 30px 60px -34px rgba(60, 18, 40, 0.38);
+  --shadow-md: 0 14px 34px -20px rgba(60, 18, 40, 0.32);
+  --grad-fade: linear-gradient(180deg, transparent, rgba(35, 21, 31, 0.5));
+
+  color-scheme: light;
+}
+
+/* --------------------------------------------------------------------------
+   3. RESET
+   -------------------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-h) + 1rem);
+}
+
+body {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  font-weight: 300;
+  line-height: 1.7;
+  letter-spacing: 0.012em;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  transition: background-color var(--t) var(--ease), color var(--t) var(--ease);
+}
+
+img,
+svg,
+picture,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* --------------------------------------------------------------------------
+   4. TYPOGRAPHY
+   -------------------------------------------------------------------------- */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: 0.005em;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+h2 {
+  font-size: var(--fs-h2);
+}
+h3 {
+  font-size: var(--fs-h3);
+}
+
+p {
+  text-wrap: pretty;
+}
+
+strong {
+  font-weight: 500;
+  color: var(--text);
+}
+
+em {
+  font-style: italic;
+}
+
+/* Small gold label that sits above a section heading */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.1rem;
+  color: var(--accent);
+  font-family: var(--font-body);
+  font-size: var(--fs-eyebrow);
+  font-weight: 400;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+}
+
+.eyebrow::before {
+  content: "";
+  width: 34px;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.6;
+}
+
+.eyebrow--center::after {
+  content: "";
+  width: 34px;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.6;
+}
+
+/* Gold gradient applied to text (used for the brand name) */
+.text-gold {
+  background: var(--grad-gold);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.lead {
+  max-width: 62ch;
+  color: var(--text-soft);
+  font-size: clamp(1.05rem, 1rem + 0.35vw, 1.25rem);
+  line-height: 1.75;
+}
+
+/* --------------------------------------------------------------------------
+   5. UTILITIES
+   -------------------------------------------------------------------------- */
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.container--narrow {
+  max-width: var(--container-narrow);
+}
+
+.section {
+  padding-block: var(--section-y);
+}
+
+.section--alt {
+  background: var(--bg-alt);
+}
+
+.section-head {
+  max-width: 64ch;
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+.section-head--center {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.section-head p {
+  margin-top: 1.1rem;
+  color: var(--text-soft);
+}
+
+/* Thin decorative gold rule */
+.rule {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--line-strong), transparent);
+  border: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Visible only to screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Skip link for keyboard users */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  z-index: 999;
+  padding: 0.75rem 1.25rem;
+  background: var(--accent);
+  color: #1a0f14;
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+  transition: top var(--t) var(--ease);
+}
+
+.skip-link:focus-visible {
+  top: 0;
+}
+
+/* Consistent focus ring across the site */
+:where(a, button, select, [tabindex]):focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* --------------------------------------------------------------------------
+   6. SCROLL REVEAL — elements fade/rise in as they enter the viewport.
+      main.js adds .is-visible; without JS everything stays visible.
+   -------------------------------------------------------------------------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.9s var(--ease), transform 0.9s var(--ease);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Respect users who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Printing: drop the decoration, keep the words */
+@media print {
+  .site-header,
+  .site-footer,
+  .hero__scroll,
+  .lightbox {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+  }
+}

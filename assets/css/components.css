@@ -1,0 +1,1063 @@
+/* ==========================================================================
+   Shake&Steer — components.css
+   Reusable pieces: buttons, cards, cocktail grid, gallery lightbox,
+   service & package cards, contact blocks and the call-to-action band.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. BUTTONS
+   -------------------------------------------------------------------------- */
+.btn {
+  --btn-bg: transparent;
+  --btn-fg: var(--text);
+  --btn-border: var(--line-strong);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  padding: 0.95rem 2.1rem;
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  border: 1px solid var(--btn-border);
+  border-radius: 100px;
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  overflow: hidden;
+  isolation: isolate;
+  transition: color var(--t) var(--ease), border-color var(--t) var(--ease),
+    transform var(--t) var(--ease), box-shadow var(--t) var(--ease);
+}
+
+/* Sheen that sweeps across on hover */
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--grad-gold);
+  transform: translateX(-101%);
+  transition: transform var(--t-slow) var(--ease);
+}
+
+.btn:hover {
+  color: #1a0f14;
+  border-color: var(--gold-400);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px -16px rgba(201, 163, 94, 0.7);
+}
+
+.btn:hover::before {
+  transform: translateX(0);
+}
+
+/* Filled, high-emphasis variant */
+.btn--primary {
+  --btn-bg: var(--grad-brand);
+  --btn-fg: #f6efe3;
+  --btn-border: transparent;
+}
+
+/* Quiet variant used inside cards */
+.btn--ghost {
+  padding-inline: 0;
+  border: 0;
+  border-bottom: 1px solid var(--line-strong);
+  border-radius: 0;
+  color: var(--accent);
+}
+
+.btn--ghost::before {
+  display: none;
+}
+
+.btn--ghost:hover {
+  color: var(--accent-soft);
+  border-bottom-color: var(--accent);
+  transform: translateX(4px);
+  box-shadow: none;
+}
+
+.btn--lg {
+  padding: 1.15rem 2.75rem;
+  font-size: 0.82rem;
+}
+
+.btn svg {
+  width: 16px;
+  height: 16px;
+  flex: none;
+}
+
+/* --------------------------------------------------------------------------
+   2. GENERIC CARD + GRIDS
+   -------------------------------------------------------------------------- */
+.grid {
+  display: grid;
+  gap: clamp(1.25rem, 2.5vw, 2rem);
+}
+
+.grid--2 {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+}
+
+.grid--3 {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr));
+}
+
+.grid--4 {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+}
+
+.card {
+  position: relative;
+  padding: clamp(1.6rem, 3vw, 2.4rem);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform var(--t) var(--ease), border-color var(--t) var(--ease),
+    box-shadow var(--t) var(--ease), background-color var(--t) var(--ease);
+}
+
+/* Gold glow that fades in from the top edge on hover */
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    120% 80% at 50% 0%,
+    rgba(201, 163, 94, 0.12),
+    transparent 62%
+  );
+  opacity: 0;
+  transition: opacity var(--t) var(--ease);
+  pointer-events: none;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow-md);
+}
+
+.card:hover::after {
+  opacity: 1;
+}
+
+.card h3 {
+  margin-bottom: 0.75rem;
+}
+
+.card p {
+  color: var(--text-soft);
+  font-size: 0.97rem;
+}
+
+/* Numbered "how it works" card */
+.card__num {
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  line-height: 1;
+  opacity: 0.65;
+}
+
+/* Icon badge used on service cards */
+.icon-badge {
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1.4rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 50%;
+  color: var(--accent);
+  transition: background-color var(--t) var(--ease), color var(--t) var(--ease),
+    transform var(--t) var(--ease-out-back);
+}
+
+.card:hover .icon-badge {
+  background: var(--grad-brand);
+  color: var(--gold-200);
+  transform: scale(1.08) rotate(-6deg);
+}
+
+.icon-badge svg {
+  width: 27px;
+  height: 27px;
+}
+
+/* --------------------------------------------------------------------------
+   3. SPLIT SECTION (text beside an image)
+   -------------------------------------------------------------------------- */
+.split {
+  display: grid;
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: center;
+}
+
+@media (min-width: 860px) {
+  .split {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Puts the image on the left without changing the HTML order */
+  .split--flip .split__media {
+    order: -1;
+  }
+}
+
+.split__media {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.split__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1.2s var(--ease);
+}
+
+.split__media:hover img {
+  transform: scale(1.04);
+}
+
+/* Small gold caption plate floating over an image */
+.media-plate {
+  position: absolute;
+  left: 1.25rem;
+  bottom: 1.25rem;
+  padding: 0.7rem 1.2rem;
+  background: rgba(21, 13, 28, 0.8); /* fallback for older browsers */
+  background: color-mix(in srgb, var(--bg) 78%, transparent);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--line);
+  border-radius: 100px;
+  color: var(--accent);
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/* --------------------------------------------------------------------------
+   4. STATS STRIP
+   -------------------------------------------------------------------------- */
+.stats {
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr));
+  padding-block: clamp(2rem, 4vw, 3rem);
+  border-block: 1px solid var(--line);
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat__value {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 5vw, 3.4rem);
+  line-height: 1;
+  color: var(--accent);
+}
+
+.stat__label {
+  display: block;
+  margin-top: 0.6rem;
+  color: var(--text-muted);
+  font-size: 0.74rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+/* --------------------------------------------------------------------------
+   5. COCKTAIL CARDS (menu page + home teaser)
+   -------------------------------------------------------------------------- */
+.cocktail-grid {
+  display: grid;
+  gap: clamp(1.25rem, 2.6vw, 2.1rem);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 285px), 1fr));
+}
+
+.cocktail {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform var(--t) var(--ease), border-color var(--t) var(--ease),
+    box-shadow var(--t) var(--ease);
+}
+
+.cocktail:hover {
+  transform: translateY(-8px);
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow-lg);
+}
+
+.cocktail__media {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  max-width: 100%;
+  overflow: hidden;
+  background: var(--plum-800);
+}
+
+.cocktail__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s var(--ease);
+}
+
+.cocktail:hover .cocktail__media img {
+  transform: scale(1.06);
+}
+
+/* Dark wash at the bottom of the photo so the label stays readable */
+.cocktail__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--grad-fade);
+  opacity: 0.85;
+}
+
+/* Base-spirit tag in the photo corner */
+.cocktail__tag {
+  position: absolute;
+  z-index: 1;
+  top: 0.9rem;
+  left: 0.9rem;
+  padding: 0.3rem 0.85rem;
+  background: rgba(21, 13, 28, 0.72); /* fallback for older browsers */
+  background: color-mix(in srgb, var(--plum-900) 70%, transparent);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--line);
+  border-radius: 100px;
+  color: var(--gold-200);
+  font-size: 0.64rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.cocktail__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1.5rem 1.5rem 1.75rem;
+}
+
+.cocktail__name {
+  font-size: 1.5rem;
+  letter-spacing: 0.015em;
+}
+
+.cocktail__name + p {
+  margin-top: 0.7rem;
+  color: var(--text-soft);
+  font-size: 0.94rem;
+  line-height: 1.65;
+}
+
+/* --------------------------------------------------------------------------
+   6. GALLERY + LIGHTBOX
+   -------------------------------------------------------------------------- */
+.gallery-grid {
+  display: grid;
+  gap: clamp(0.75rem, 1.6vw, 1.25rem);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
+  grid-auto-rows: 230px;
+}
+
+.gallery-item {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: zoom-in;
+  background: var(--plum-800);
+}
+
+/* A few tiles span two rows/columns for an editorial rhythm */
+@media (min-width: 700px) {
+  .gallery-item--tall {
+    grid-row: span 2;
+  }
+  .gallery-item--wide {
+    grid-column: span 2;
+  }
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s var(--ease), filter var(--t) var(--ease);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.07);
+  filter: brightness(1.08);
+}
+
+/* Caption that slides up on hover */
+.gallery-item__caption {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 2.5rem 1.1rem 1.1rem;
+  background: var(--grad-fade);
+  color: #f3ecf6;
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  text-align: left;
+  text-transform: uppercase;
+  transform: translateY(8px);
+  opacity: 0;
+  transition: opacity var(--t) var(--ease), transform var(--t) var(--ease);
+}
+
+.gallery-item:hover .gallery-item__caption,
+.gallery-item:focus-visible .gallery-item__caption {
+  opacity: 1;
+  transform: none;
+}
+
+/* -- Lightbox overlay ----------------------------------------------------- */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  padding: clamp(1rem, 4vw, 3rem);
+  background: rgba(7, 4, 10, 0.94); /* fallback for older browsers */
+  background: color-mix(in srgb, #07040a 92%, transparent);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--t) var(--ease), visibility var(--t);
+}
+
+.lightbox.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox__figure {
+  max-width: min(1100px, 100%);
+  max-height: 100%;
+  margin: 0;
+  text-align: center;
+  transform: scale(0.96);
+  transition: transform var(--t) var(--ease-out-back);
+}
+
+.lightbox.is-open .lightbox__figure {
+  transform: none;
+}
+
+.lightbox__figure img {
+  max-height: 74vh;
+  margin-inline: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+}
+
+.lightbox__caption {
+  margin-top: 1.1rem;
+  color: var(--gold-200);
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.lightbox__count {
+  display: block;
+  margin-top: 0.4rem;
+  color: #8d8296;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+}
+
+/* Lightbox controls */
+.lightbox__btn {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(201, 163, 94, 0.3);
+  border-radius: 50%;
+  color: #f0e2c4;
+  transition: background-color var(--t) var(--ease), transform var(--t) var(--ease);
+}
+
+.lightbox__btn:hover {
+  background: rgba(201, 163, 94, 0.24);
+  transform: scale(1.08);
+}
+
+.lightbox__btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.lightbox__close {
+  top: clamp(1rem, 3vw, 2rem);
+  right: clamp(1rem, 3vw, 2rem);
+}
+
+.lightbox__prev {
+  left: clamp(0.5rem, 3vw, 2rem);
+  top: 50%;
+  translate: 0 -50%;
+}
+
+.lightbox__next {
+  right: clamp(0.5rem, 3vw, 2rem);
+  top: 50%;
+  translate: 0 -50%;
+}
+
+/* --------------------------------------------------------------------------
+   7. SERVICE + PACKAGE CARDS
+   -------------------------------------------------------------------------- */
+.includes {
+  margin-top: 1.4rem;
+  padding-top: 1.3rem;
+  border-top: 1px solid var(--line);
+}
+
+.includes li {
+  position: relative;
+  padding-left: 1.6rem;
+  color: var(--text-soft);
+  font-size: 0.93rem;
+}
+
+.includes li + li {
+  margin-top: 0.6rem;
+}
+
+/* Gold check mark drawn in CSS */
+.includes li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 9px;
+  height: 5px;
+  border-left: 1.5px solid var(--accent);
+  border-bottom: 1.5px solid var(--accent);
+  transform: rotate(-45deg);
+}
+
+/* -- Packages ------------------------------------------------------------- */
+.packages {
+  display: grid;
+  gap: clamp(1.25rem, 2.5vw, 2rem);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  align-items: start;
+}
+
+.package {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: clamp(1.8rem, 3vw, 2.6rem);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  transition: transform var(--t) var(--ease), border-color var(--t) var(--ease),
+    box-shadow var(--t) var(--ease);
+}
+
+.package:hover {
+  transform: translateY(-6px);
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow-md);
+}
+
+/* The middle "recommended" tier */
+.package--featured {
+  background: linear-gradient(
+      165deg,
+      rgba(124, 63, 163, 0.22),
+      rgba(142, 28, 63, 0.18)
+    ),
+    var(--surface);
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow-md);
+}
+
+.package__badge {
+  align-self: flex-start;
+  margin-bottom: 1.1rem;
+  padding: 0.3rem 0.9rem;
+  background: var(--grad-gold);
+  border-radius: 100px;
+  color: #1a0f14;
+  font-size: 0.63rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.package__name {
+  font-size: clamp(1.7rem, 3vw, 2.1rem);
+}
+
+.package__tagline {
+  margin-top: 0.5rem;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+/* "Price on request" plate instead of a number */
+.package__price {
+  margin: 1.5rem 0 0.25rem;
+  padding: 0.9rem 1.1rem;
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--radius-sm);
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.package__note {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+.package .includes {
+  flex: 1;
+}
+
+.package .btn {
+  margin-top: 1.8rem;
+  width: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   8. PROCESS TIMELINE
+   -------------------------------------------------------------------------- */
+.timeline {
+  display: grid;
+  gap: clamp(1.25rem, 2.5vw, 1.75rem);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
+  counter-reset: step;
+}
+
+.timeline__item {
+  position: relative;
+  padding-top: 2.6rem;
+  border-top: 1px solid var(--line);
+}
+
+.timeline__item::before {
+  counter-increment: step;
+  content: counter(step, decimal-leading-zero);
+  position: absolute;
+  top: -0.85rem;
+  left: 0;
+  padding-right: 0.8rem;
+  background: var(--bg);
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  letter-spacing: 0.1em;
+}
+
+.section--alt .timeline__item::before {
+  background: var(--bg-alt);
+}
+
+.timeline__item h3 {
+  font-size: 1.3rem;
+}
+
+.timeline__item p {
+  margin-top: 0.6rem;
+  color: var(--text-soft);
+  font-size: 0.94rem;
+}
+
+/* --------------------------------------------------------------------------
+   9. CALL-TO-ACTION BAND
+   -------------------------------------------------------------------------- */
+.cta {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  text-align: center;
+}
+
+.cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(
+      65% 100% at 20% 0%,
+      rgba(124, 63, 163, 0.42),
+      transparent 62%
+    ),
+    radial-gradient(65% 100% at 82% 100%, rgba(142, 28, 63, 0.42), transparent 64%),
+    var(--bg-alt);
+}
+
+.cta h2 {
+  max-width: 18ch;
+  margin-inline: auto;
+}
+
+.cta p {
+  max-width: 52ch;
+  margin: 1.2rem auto 0;
+  color: var(--text-soft);
+}
+
+.cta__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2.4rem;
+}
+
+/* --------------------------------------------------------------------------
+   10. CONTACT PAGE
+   -------------------------------------------------------------------------- */
+.contact-grid {
+  display: grid;
+  gap: clamp(1.25rem, 2.5vw, 1.75rem);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 270px), 1fr));
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: clamp(1.7rem, 3vw, 2.3rem);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  transition: transform var(--t) var(--ease), border-color var(--t) var(--ease);
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--line-strong);
+}
+
+.contact-card__label {
+  margin-bottom: 0.45rem;
+  color: var(--text-muted);
+  font-size: 0.7rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.contact-card__value {
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 2.2vw, 1.5rem);
+  line-height: 1.35;
+  color: var(--text);
+  overflow-wrap: anywhere;
+  transition: color var(--t) var(--ease);
+}
+
+a.contact-card__value:hover {
+  color: var(--accent);
+}
+
+.contact-card__note {
+  margin-top: 0.7rem;
+  color: var(--text-muted);
+  font-size: 0.86rem;
+}
+
+/* Highlights every "[REPLACE: …]" placeholder so the owner can spot them.
+   Delete this rule once all placeholders are filled in.                     */
+.placeholder {
+  padding: 0.05em 0.4em;
+  background: rgba(201, 163, 94, 0.12);
+  border: 1px dashed var(--line-strong);
+  border-radius: 4px;
+  color: var(--accent);
+  font-family: var(--font-body);
+  font-size: 0.9em;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+/* -- Social links --------------------------------------------------------- */
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.social {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--text-soft);
+  transition: color var(--t) var(--ease), border-color var(--t) var(--ease),
+    background-color var(--t) var(--ease), transform var(--t) var(--ease-out-back);
+}
+
+.social:hover {
+  color: var(--gold-200);
+  background: var(--grad-brand);
+  border-color: transparent;
+  transform: translateY(-3px);
+}
+
+.social svg {
+  width: 19px;
+  height: 19px;
+}
+
+/* Opening hours / availability list */
+.info-list {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.info-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--line);
+  color: var(--text-soft);
+  font-size: 0.94rem;
+}
+
+.info-list li span:last-child {
+  color: var(--text);
+  text-align: right;
+}
+
+/* --------------------------------------------------------------------------
+   11. FAQ (accordion built on <details>)
+   -------------------------------------------------------------------------- */
+.faq {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.faq details {
+  padding: 1.3rem 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  transition: border-color var(--t) var(--ease);
+}
+
+.faq details[open] {
+  border-color: var(--line-strong);
+}
+
+.faq summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  list-style: none;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Plus / minus indicator */
+.faq summary::after {
+  content: "";
+  flex: none;
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(var(--accent), var(--accent)) center / 100% 1.5px
+      no-repeat,
+    linear-gradient(var(--accent), var(--accent)) center / 1.5px 100% no-repeat;
+  transition: transform var(--t) var(--ease);
+}
+
+.faq details[open] summary::after {
+  transform: rotate(90deg);
+  background: linear-gradient(var(--accent), var(--accent)) center / 100% 1.5px
+    no-repeat;
+}
+
+.faq p {
+  margin-top: 0.9rem;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
+/* --------------------------------------------------------------------------
+   12. DOWNLOAD BAND (menu page)
+   -------------------------------------------------------------------------- */
+.download {
+  position: relative;
+  padding: clamp(2.2rem, 5vw, 3.5rem);
+  background: linear-gradient(
+      150deg,
+      rgba(124, 63, 163, 0.26),
+      rgba(142, 28, 63, 0.22)
+    ),
+    var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+.download h2 {
+  max-width: 20ch;
+  margin-inline: auto;
+}
+
+.download p {
+  max-width: 54ch;
+  margin: 1rem auto 0;
+  color: var(--text-soft);
+}
+
+.download__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.download__hint {
+  margin-top: 1.4rem;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+/* --------------------------------------------------------------------------
+   13. MENU CATEGORY CHIPS (visual list of the full menu sections)
+   -------------------------------------------------------------------------- */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.chip {
+  padding: 0.55rem 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 100px;
+  color: var(--text-soft);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: color var(--t) var(--ease), border-color var(--t) var(--ease),
+    background-color var(--t) var(--ease);
+}
+
+.chip:hover {
+  color: var(--accent);
+  border-color: var(--line-strong);
+  background: var(--surface);
+}
+
+/* --------------------------------------------------------------------------
+   14. TABLES OF FACTS (about page)
+   -------------------------------------------------------------------------- */
+.values {
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+}
+
+.value h3 {
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+  font-size: 1.35rem;
+}
+
+.value h3::before {
+  content: "";
+  flex: none;
+  width: 22px;
+  height: 1px;
+  background: var(--accent);
+}
+
+.value p {
+  margin-top: 0.7rem;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
+/* --------------------------------------------------------------------------
+   15. QUOTE / TESTIMONIAL
+   -------------------------------------------------------------------------- */
+.quote {
+  max-width: 40ch;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.quote blockquote {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-style: italic;
+  line-height: 1.45;
+  color: var(--text);
+}
+
+.quote blockquote::before {
+  content: "\201C";
+  display: block;
+  margin-bottom: -0.35em;
+  color: var(--accent);
+  font-size: 3.5rem;
+  line-height: 1;
+  opacity: 0.7;
+}
+
+.quote figcaption {
+  margin-top: 1.4rem;
+  color: var(--text-muted);
+  font-size: 0.74rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title data-i18n="meta.menu.title">Menu — Shake&amp;Steer Cocktail Catering</title>
+  <meta name="description"
+        content="Ten signature Shake&Steer cocktails, plus a downloadable PDF with the full list of around seventy drinks, descriptions and ingredients."
+        data-i18n-attr="content:meta.menu.description">
+
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap">
+
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+
+  <script src="assets/js/theme.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
+
+  <!-- ================= HEADER (same on every page) ================= -->
+  <header class="site-header">
+    <div class="site-header__inner">
+
+      <a class="brand" href="index.html">
+        <img class="brand__mark" src="assets/img/logo.svg" alt="" width="34" height="34">
+        <span>Shake<span class="brand__amp">&amp;</span>Steer</span>
+      </a>
+
+      <nav class="nav" id="primary-nav" data-nav aria-label="Main">
+        <a class="nav__link" href="index.html" data-i18n="nav.home">Home</a>
+        <a class="nav__link" href="about.html" data-i18n="nav.about">About</a>
+        <a class="nav__link" href="menu.html" aria-current="page" data-i18n="nav.menu">Menu</a>
+        <a class="nav__link" href="gallery.html" data-i18n="nav.gallery">Gallery</a>
+        <a class="nav__link" href="services.html" data-i18n="nav.services">Services</a>
+        <a class="nav__link" href="contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="header-tools">
+        <div class="lang-switch">
+          <svg class="lang-switch__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.6" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/><path d="M3 12h18"/>
+            <ellipse cx="12" cy="12" rx="4.2" ry="9"/>
+          </svg>
+          <label class="sr-only" for="lang-select" data-i18n="nav.language">Language</label>
+          <select id="lang-select" data-lang-switch></select>
+        </div>
+
+        <button class="theme-toggle" type="button" data-theme-toggle
+                aria-label="Switch theme" data-i18n-attr="aria-label:nav.theme">
+          <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.6" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+          </svg>
+          <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.6" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/>
+          </svg>
+        </button>
+      </div>
+
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false"
+              aria-controls="primary-nav" aria-label="Menu" data-i18n-attr="aria-label:nav.menuButton">
+        <span class="nav-toggle__bars"><span></span><span></span><span></span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= PAGE HERO ================= -->
+    <section class="hero hero--page">
+      <div class="hero__bg"></div>
+      <div class="hero__grain"></div>
+      <div class="hero__frame"></div>
+
+      <div class="container hero__inner">
+        <p class="eyebrow eyebrow--center" data-i18n="menu.hero.eyebrow">The drinks</p>
+        <h1 data-i18n="menu.hero.title">Ten signatures,<br>seventy ways to say yes</h1>
+        <p class="hero__text" data-i18n="menu.hero.text">
+          These ten are the house creations we are known for. Behind them sits a full book
+          of classics, spritzes, tiki serves and alcohol-free drinks — all of it in the PDF
+          at the bottom of this page.
+        </p>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         SIGNATURE COCKTAILS
+         TO EDIT: change the name inside <h3>, the tag, the image and the
+         description. The descriptions are translated in /i18n/*.json under
+         the keys menu.c1 … menu.c10.
+         ================================================================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow eyebrow--center" data-i18n="menu.signature.eyebrow">Signature creations</p>
+          <h2 data-i18n="menu.signature.title">The house list</h2>
+          <p data-i18n="menu.signature.text">
+            Rewritten twice a year around what is in season. Every one of them can be
+            batched for large events without losing a thing.
+          </p>
+        </div>
+
+        <div class="cocktail-grid" data-reveal-group="70">
+
+          <!-- 01 -->
+          <article class="cocktail reveal">
+            <div class="cocktail__media">
+              <span class="cocktail__tag" data-i18n="menu.tags.whisky">Whisky</span>
+              <img src="assets/img/cocktail-01.svg" alt="Velvet Sovereign cocktail placeholder"
+                   data-i18n-attr="alt:menu.c1.alt" width="400" height="500" loading="lazy">
+            </div>
+            <div class="cocktail__body">
+              <h3 class="cocktail__name">Velvet Sovereign</h3>
+              <p data-i18n="menu.c1.desc">
+                Aged whisky softened with fig and vanilla, finished with a whisper of
+                cherrywood smoke released at the table.
+              </p>
+            </div>
+          </article>
+
+          <!-- 02 -->
+          <article class="cocktail reveal">
+            <div class="cocktail__media">
+              <span class="cocktail__tag" data-i18n="menu.tags.gin">Gin</span>
+              <img src="assets/img/cocktail-02.svg" alt="Gilded Plum cocktail placeholder"
+                   data-i18n-attr="alt:menu.c2.alt" width="400" height="500" loading="lazy">
+            </div>
+            <div class="cocktail__body">
+              <h3 class="cocktail__name">Gilded Plum</h3>
+              <p data-i18n="menu.c2.desc">
+                Gin stirred down with plum liqueur and golden chamomile, bright as a
+                late-afternoon sun and twice as easy to finish.
+              </p>
+            </div>
+          </article>
+
+          <!-- 03 -->
+          <article class="cocktail reveal">
+            <div class="cocktail__media">
+              <span class="cocktail__tag" data-i18n="menu.tags.mezcal">Mezcal</span>
+              <img src="assets/img/cocktail-03.svg" alt="Rosé Noir cocktail placeholder"
+                   data-i18n-attr="alt:menu.c3.alt" width="400" height="500" loading="lazy">
+            </div>
+            <div class="cocktail__body">
+              <h3 class="cocktail__name">Rosé Noir</h3>
+              <p data-i18n="menu.c3.desc">
+                Smoked mezcal, rose and pink grapefruit over a long block of clear ice —
+                floral at the front, quietly smoky at the end.
+              </p>
+            </div>
+          </article>
+
+          <!-- 04 -->
+          <article class="cocktail reveal">
+            <div class="cocktail__media">
+              <span class="cocktail__tag" data-i18n="menu.tags.gin">Gin</span>
+              <img src="assets/img/cocktail-04.svg" alt="Adriatic Mist cocktail placeholder"
+                   data-i18n-attr="alt:menu.c4.alt" width="400" height="500" loading="lazy">
+            </div>
+            <div class="cocktail__body">
+              <h3 class="cocktail__name">Adriatic Mist</h3>
+              <p data-i18n="menu.c4.desc">
+                Coastal gin, sea-salt tonic and a cordial of green olive and rosemary.
+                Clean, saline and impossible to drink slowly in August.
+              </p>
+            </div>
+          </article>
+
+          <!-- 05 -->
+          <article class="cocktail reveal">
+            <div class="cocktail__media">
+              <span class="cocktail__tag" data-i18n="menu.tags.champagne">Champagne</span>
+              <img src="assets/img/cocktail-05.svg" alt="Bordeaux Ember cocktail placeholder"
+                   data-i18n-attr="alt:menu.c5.alt" width="400" height="500" loading="lazy">
+            </div>
+            <div class="cocktail__body">
+              <h3 class="cocktail__name">Bordeaux Ember</h3>
+              <p data-i18n="menu.c5.desc">
+                Blackcurrant and burnt orange under a slow pour of champagne, served in a
+                chilled flute with a single gold leaf.
+              </p>
+            </div>
+          </article>
+
+          <!-- 06 -->
+          <article class="cocktail reveal">
+            <div class="cocktail__media">
+              <span class="cocktail__tag" data-i18n="menu.tags.vodka">Vodka</span>
+              <img src="assets/img/cocktail-06.svg" alt="The Violet Hour cocktail placeholder"
+                   data-i18n-attr="alt:menu.c6.alt" width="400" height="500" loading="lazy">
+            </div>
+            <div class="cocktail__body">
+              <h3 class="cocktail__name">The Violet Hour</h3>
+              <p data-i18n="menu.c6.desc">
+                Vodka washed with violet and blackberry, lengthened with sparkling wine and
+                served the colour of the sky ten minutes after sunset.
+              </p>
+            </div>
+          </article>
+
+          <!-- 07 -->
+          <article class="cocktail reveal">
+            <div class="cocktail__media">
+              <span class="cocktail__tag" data-i18n="menu.tags.zeroproof">Alcohol-free</span>
+              <img src="assets/img/cocktail-07.svg" alt="Garden Room cocktail placeholder"
+                   data-i18n-attr="alt:menu.c7.alt" width="400" height="500" loading="lazy">
+            </div>
+            <div class="cocktail__body">
+              <h3 class="cocktail__name">Garden Room</h3>
+              <p data-i18n="menu.c7.desc">
+                Cucumber, green apple and lovage with a verjus cordial and soda. Every bit
+                as considered as the drinks with spirits in them.
+              </p>
+            </div>
+          </article>
+
+          <!-- 08 -->
+          <article class="cocktail reveal">
+            <div class="cocktail__media">
+              <span class="cocktail__tag" data-i18n="menu.tags.rum">Rum</span>
+              <img src="assets/img/cocktail-08.svg" alt="Amber &amp; Anise cocktail placeholder"
+                   data-i18n-attr="alt:menu.c8.alt" width="400" height="500" loading="lazy">
+            </div>
+            <div class="cocktail__body">
+              <h3 class="cocktail__name">Amber &amp; Anise</h3>
+              <p data-i18n="menu.c8.desc">
+                Dark rum, roasted pineapple and star anise, poured tall over crushed ice
+                with a cinnamon-sugar rim.
+              </p>
+            </div>
+          </article>
+
+          <!-- 09 -->
+          <article class="cocktail reveal">
+            <div class="cocktail__media">
+              <span class="cocktail__tag" data-i18n="menu.tags.tequila">Tequila</span>
+              <img src="assets/img/cocktail-09.svg" alt="Midnight Harbour cocktail placeholder"
+                   data-i18n-attr="alt:menu.c9.alt" width="400" height="500" loading="lazy">
+            </div>
+            <div class="cocktail__body">
+              <h3 class="cocktail__name">Midnight Harbour</h3>
+              <p data-i18n="menu.c9.desc">
+                Blanco tequila with blue butterfly pea, lime and a salted honey cordial that
+                shifts colour as it dilutes.
+              </p>
+            </div>
+          </article>
+
+          <!-- 10 -->
+          <article class="cocktail reveal">
+            <div class="cocktail__media">
+              <span class="cocktail__tag" data-i18n="menu.tags.champagne">Champagne</span>
+              <img src="assets/img/cocktail-10.svg" alt="Fête Royale cocktail placeholder"
+                   data-i18n-attr="alt:menu.c10.alt" width="400" height="500" loading="lazy">
+            </div>
+            <div class="cocktail__body">
+              <h3 class="cocktail__name">Fête Royale</h3>
+              <p data-i18n="menu.c10.desc">
+                Elderflower, white peach and champagne with a sugar cube soaked in bitters —
+                our welcome drink of choice for weddings.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FULL MENU CATEGORIES ================= -->
+    <section class="section section--alt">
+      <div class="container container--narrow">
+        <div class="section-head section-head--center">
+          <p class="eyebrow eyebrow--center" data-i18n="menu.full.eyebrow">The full book</p>
+          <h2 data-i18n="menu.full.title">Around seventy drinks, in seven chapters</h2>
+          <p data-i18n="menu.full.text">
+            Your final menu is usually five to eight drinks chosen from this book. The
+            complete list, with descriptions and ingredients, is in the PDF below.
+          </p>
+        </div>
+
+        <div class="chips reveal">
+          <span class="chip" data-i18n="menu.cat.signature">Signature creations</span>
+          <span class="chip" data-i18n="menu.cat.classics">Classics, reimagined</span>
+          <span class="chip" data-i18n="menu.cat.sparkling">Sparkling &amp; champagne</span>
+          <span class="chip" data-i18n="menu.cat.aperitivo">Aperitivo &amp; spritz</span>
+          <span class="chip" data-i18n="menu.cat.tropical">Tropical &amp; tiki</span>
+          <span class="chip" data-i18n="menu.cat.zeroproof">Alcohol-free</span>
+          <span class="chip" data-i18n="menu.cat.digestif">After dinner</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         DOWNLOAD THE FULL MENU (PDF)
+         The button points at the English PDF by default and switches to the
+         Serbian one when Serbian is selected — see initPdfLinks() in main.js.
+         Both files live in /downloads/.
+         ================================================================= -->
+    <section class="section">
+      <div class="container container--narrow">
+        <div class="download reveal">
+          <p class="eyebrow eyebrow--center" data-i18n="menu.download.eyebrow">Full menu</p>
+          <h2 data-i18n="menu.download.title">Take the whole list with you</h2>
+          <p data-i18n="menu.download.text">
+            Around seventy cocktails with a description and full ingredients for each one,
+            laid out to print cleanly on A4.
+          </p>
+
+          <div class="download__actions">
+            <!-- Primary button: follows the language selected in the header -->
+            <a class="btn btn--primary btn--lg"
+               href="downloads/shake-and-steer-menu-en.pdf"
+               download="shake-and-steer-menu-en.pdf"
+               data-pdf-link
+               data-pdf-en="downloads/shake-and-steer-menu-en.pdf"
+               data-pdf-sr="downloads/shake-and-steer-menu-sr.pdf">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 3v12"/><path d="M7 11l5 5 5-5"/><path d="M4 20h16"/>
+              </svg>
+              <span data-i18n="menu.download.button">Download full menu (PDF)</span>
+            </a>
+
+            <!-- Direct links, so both languages are always reachable -->
+            <a class="btn" href="downloads/shake-and-steer-menu-en.pdf"
+               download="shake-and-steer-menu-en.pdf" data-i18n="menu.download.en">English PDF</a>
+            <a class="btn" href="downloads/shake-and-steer-menu-sr.pdf"
+               download="shake-and-steer-menu-sr.pdf" data-i18n="menu.download.sr">Serbian PDF</a>
+          </div>
+
+          <p class="download__hint" data-i18n="menu.download.hint">
+            The main button follows the language you picked in the header: Serbian for SR,
+            English for everything else.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="section cta">
+      <div class="container">
+        <h2 data-i18n="menu.cta.title">Want a menu written for your evening?</h2>
+        <p data-i18n="menu.cta.text">
+          Send us the date, the venue and the kind of night you have in mind. We will come
+          back with a menu draft you can actually picture in your guests' hands.
+        </p>
+        <div class="cta__actions">
+          <a class="btn btn--primary btn--lg" href="contact.html" data-i18n="cta.primary">Get in touch</a>
+          <a class="btn btn--lg" href="services.html" data-i18n="cta.secondary">View packages</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER (same on every page) ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+
+        <div>
+          <span class="footer-brand__name">Shake<span class="brand__amp">&amp;</span>Steer</span>
+          <p data-i18n="footer.about">
+            A travelling cocktail bar for weddings, private parties and corporate events.
+            Bespoke menus, professional bartenders, and a bar built for the room it stands in.
+          </p>
+        </div>
+
+        <div>
+          <h4 data-i18n="footer.explore">Explore</h4>
+          <ul class="footer-list">
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav.about">About</a></li>
+            <li><a href="menu.html" data-i18n="nav.menu">Menu</a></li>
+            <li><a href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 data-i18n="footer.services">Services</h4>
+          <ul class="footer-list">
+            <li><a href="services.html" data-i18n="services.weddings.title">Weddings</a></li>
+            <li><a href="services.html" data-i18n="services.private.title">Private parties</a></li>
+            <li><a href="services.html" data-i18n="services.corporate.title">Corporate events</a></li>
+            <li><a href="services.html" data-i18n="services.celebrations.title">Celebrations</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 data-i18n="footer.contact">Contact</h4>
+          <!-- PLACEHOLDERS — replace the e-mail and phone in every .html file -->
+          <ul class="footer-list">
+            <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+            <li><a href="tel:+000000000000">+00 000 000 000</a></li>
+          </ul>
+          <div class="socials" style="margin-top:1.2rem">
+            <a class="social" href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/>
+                <circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/>
+              </svg>
+            </a>
+            <a class="social" href="https://tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M16.6 5.8a4.3 4.3 0 0 1-1.1-2.8h-3v12.1a2.4 2.4 0 1 1-1.7-2.3V9.7a5.5 5.5 0 1 0 4.7 5.4V9.6a7.2 7.2 0 0 0 4.2 1.35V7.9a4.3 4.3 0 0 1-3.1-2.1z"/>
+              </svg>
+            </a>
+            <a class="social" href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M13.5 21v-8h2.7l.4-3.1h-3.1V7.9c0-.9.25-1.5 1.55-1.5h1.65V3.6c-.3-.04-1.3-.1-2.5-.1-2.5 0-4.2 1.53-4.2 4.33V9.9H7.3V13H10v8z"/>
+              </svg>
+            </a>
+            <a class="social" href="https://wa.me/000000000000" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 3a9 9 0 0 0-7.7 13.6L3 21l4.5-1.2A9 9 0 1 0 12 3zm0 2a7 7 0 1 1-3.6 13l-.3-.2-2.3.6.6-2.2-.2-.3A7 7 0 0 1 12 5zm-2.6 3.4c-.2 0-.5 0-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.7 2.7 4.2 3.7 2 .8 2.4.6 2.9.6.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.15-1.2l-.6-.3-1.5-.7c-.2-.1-.4-.1-.55.1l-.75 1c-.15.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.35.1-.45l.45-.5c.15-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.7-1.7c-.2-.45-.4-.4-.55-.4z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="site-footer__bottom">
+        <p>© <span data-year>2026</span> Shake&amp;Steer. <span data-i18n="footer.rights">All rights reserved.</span></p>
+        <p data-i18n="footer.responsibly">Please enjoy responsibly. 18+</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
